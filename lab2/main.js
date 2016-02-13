@@ -3,7 +3,7 @@ $(document).ready(function() {
   // get weather information
   getCoords();
   
-  // get coordinates of user's location
+  // get coordinates of user's location 
   function getCoords() {
     // check if browser has geolocation
     if (navigator.geolocation) {
@@ -12,13 +12,13 @@ $(document).ready(function() {
         var lon = position.coords.longitude;
         getWeather(lat, lon);
       },
+      // display error if geolocation disabled
       function (error) { 
-        // display error if geolocation disabled
         if (error.code == error.PERMISSION_DENIED)
           $('#error').html('Geolocation is not supported by this browser.');
       });
     } else {
-      // display error if geolocation disabled
+      // display error if geolocation disabled on website and console
       console.log('error');
       $('#error').html('Geolocation is not supported by this browser.');
     }
@@ -26,8 +26,9 @@ $(document).ready(function() {
   
   // use Forecast.io weather api to get weather data
   function getWeather(lat, lon) {
-    var apiKey = '7d25c3e744d47874007a7b9b6c9e4152';
+    var apiKey = '28800f821fc34338b45c29ca07407a40';
     var url = 'https://api.forecast.io/forecast/' + apiKey + '/' + lat + ',' + lon;
+
     // call api using ajax
     $.ajax({
       url: url,
@@ -43,7 +44,6 @@ $(document).ready(function() {
     });
   }
 
-
   // display weather information in browser
   function displayWeather(info) {
     // get and display location name
@@ -52,11 +52,10 @@ $(document).ready(function() {
     // display weather icon
     var icon = info.currently.icon;
     var skycons = new Skycons({"color": "purple"});
-    skycons.set("icon1", icon);
+    skycons.set("iconToday", icon);
     skycons.play();
 
-    // display weather temperature, and "feels like"
-    
+    // display weather temperature and "feels like" temperature
     $('#degrees').html((info.currently.temperature).toFixed(1) + ' &deg;F');
     $('#feels-like').html('Feels like ' + (info.currently.apparentTemperature).toFixed(1) + ' &deg;F');
     
@@ -75,13 +74,17 @@ $(document).ready(function() {
     $('#wind').html('Wind: ' + info.currently.windSpeed + ' mph');
     $('#humidity').html('Humidity: ' + (info.currently.humidity * 100) + '%');
 
-    // console.log(info.daily.data[0]);
-
+    // call function to display weekly forecast
     display6day(info);
   }
   
+  // display weeks forecast
   function display6day(info) {
+    // get todays date information
     var today = new Date();
+    var daynum = today.getDay();
+
+    // change weekly index to day names
     var weekday = new Array(7);
       weekday[0]=  "Sunday";
       weekday[1] = "Monday";
@@ -90,29 +93,29 @@ $(document).ready(function() {
       weekday[4] = "Thursday";
       weekday[5] = "Friday";
       weekday[6] = "Saturday";
-    var daynum = today.getDay();
 
     var fday = [];
     for (i=0; i < 6; i++) {
       if (daynum == 6) {
         daynum = 0;
+      } else {
+       daynum ++; 
       }
-      daynum ++;
       fday.push(weekday[daynum]);
     }
-    // console.log(fday);
 
+    // each days information for weekly forecast
     var day1 = '';
     day1 += '<div class ="well well-sm">';
     day1 += '<div class = "lead">';
     day1 += fday[0];
     day1 += '</div>';
     day1 += '<div class = "primary">';
-    day1 += info.daily.data[0].summary + '<br />';
+    day1 += info.daily.data[1].summary + '<br />';
     day1 += '</div>';
     day1 += '<div class = "text-info">';
-    day1 += 'Min: ' + info.daily.data[0].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
-    day1 += 'Max: ' + info.daily.data[0].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
+    day1 += 'Min: ' + info.daily.data[1].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
+    day1 += 'Max: ' + info.daily.data[1].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
     day1 += '</div>';
     day1 += '</div>';
 
@@ -122,11 +125,11 @@ $(document).ready(function() {
     day2 += fday[1];
     day2 += '</div>';
     day2 += '<div class = "primary">';
-    day2 += info.daily.data[1].summary + '<br />';
+    day2 += info.daily.data[2].summary + '<br />';
     day2 += '</div>';
     day2 += '<div class = "text-info">';
-    day2 += 'Min: ' + info.daily.data[1].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
-    day2 += 'Max: ' + info.daily.data[1].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
+    day2 += 'Min: ' + info.daily.data[2].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
+    day2 += 'Max: ' + info.daily.data[2].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
     day2 += '</div>';
     day2 += '</div>';
 
@@ -136,11 +139,11 @@ $(document).ready(function() {
     day3 += fday[2];
     day3 += '</div>';
     day3 += '<div class = "primary">';
-    day3 += info.daily.data[2].summary + '<br />';
+    day3 += info.daily.data[3].summary + '<br />';
     day3 += '</div>';
     day3 += '<div class = "text-info">';
-    day3 += 'Min: ' + info.daily.data[2].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
-    day3 += 'Max: ' + info.daily.data[2].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
+    day3 += 'Min: ' + info.daily.data[3].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
+    day3 += 'Max: ' + info.daily.data[3].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
     day3 += '</div>';
     day3 += '</div>';
 
@@ -150,11 +153,11 @@ $(document).ready(function() {
     day4 += fday[3];
     day4 += '</div>';
     day4 += '<div class = "primary">';
-    day4 += info.daily.data[3].summary + '<br />';
+    day4 += info.daily.data[4].summary + '<br />';
     day4 += '</div>';
     day4 += '<div class = "text-info">';
-    day4 += 'Min: ' + info.daily.data[3].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
-    day4 += 'Max: ' + info.daily.data[3].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
+    day4 += 'Min: ' + info.daily.data[4].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
+    day4 += 'Max: ' + info.daily.data[4].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
     day4 += '</div>';
     day4 += '</div>';
 
@@ -164,11 +167,11 @@ $(document).ready(function() {
     day5 += fday[4];
     day5 += '</div>';
     day5 += '<div class = "primary">';
-    day5 += info.daily.data[4].summary + '<br />';
+    day5 += info.daily.data[5].summary + '<br />';
     day5 += '</div>';
     day5 += '<div class = "text-info">';
-    day5 += 'Min: ' + info.daily.data[4].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
-    day5 += 'Max: ' + info.daily.data[4].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
+    day5 += 'Min: ' + info.daily.data[5].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
+    day5 += 'Max: ' + info.daily.data[5].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
     day5 += '</div>';
     day5 += '</div>';
 
@@ -178,14 +181,15 @@ $(document).ready(function() {
     day6 += fday[5];
     day6 += '</div>';
     day6 += '<div class = "primary">';
-    day6 += info.daily.data[5].summary + '<br />';
+    day6 += info.daily.data[6].summary + '<br />';
     day6 += '</div>';
     day6 += '<div class = "text-info">';
-    day6 += 'Min: ' + info.daily.data[5].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
-    day6 += 'Max: ' + info.daily.data[5].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
+    day6 += 'Min: ' + info.daily.data[6].temperatureMin.toFixed(1) + ' &deg;F' + '<br />';
+    day6 += 'Max: ' + info.daily.data[6].temperatureMax.toFixed(1) + ' &deg;F' + '<br />';
     day6 += '</div>';
     day6 += '</div>';
 
+    // add days information into HTML
     $('.day1').html(day1);
     $('.day2').html(day2);
     $('.day3').html(day3);
@@ -195,10 +199,8 @@ $(document).ready(function() {
   }
 
 
-
-
-  // get and display location name using Google's Geocode API
-  // forecast.io does not retrieve location name information
+  // forecast.io doesn't give state information, only city
+  // using Google's Reverse Geocode API to get location name
   function getLocationName(lat, lon) {
     var latlng = new google.maps.LatLng(lat, lon);
     var geocoder = new google.maps.Geocoder();
@@ -207,26 +209,26 @@ $(document).ready(function() {
       var cityIndex = 2;
       var stateIndex = 4;
       
+      // city and state name
       var city = result[0].address_components[cityIndex].long_name;
       var state = result[0].address_components[stateIndex].short_name;
       
-      // sometimes city and state are at different indexes depending on what info google can retrieve
+      // depending on what info google can retrieve, someitme the city and state are differnet indexes
       if (state.length > 2) {
         city = result[0].address_components[cityIndex + 1].long_name;
         state = result[0].address_components[stateIndex + 1].short_name;
       }
       
-      // display city and state
+      // display city and state for current location
       $('#city').html(city + ', ' + state);
     });
   }
   
-  // refresh weather information without refreshing browser
+  // refresh current weather information but don't refresh browser
   $('#refresh').on('click', function() {
     $('#weather-box').animate({opacity: 0}, 300);
     getCoords();
     $('#weather-box').animate({opacity: 1}, 2000);
   });
-  
   
 });
