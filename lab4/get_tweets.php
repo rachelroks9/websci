@@ -2,10 +2,10 @@
 require_once('TwitterAPIExchange.php');
 
 $settings = array(
-    'oauth_access_token' => '47282406-UyxyVM0rkAwuti3YpgwLGyi84Yh8KXxKOv4mQ6Xhv',
-    'oauth_access_token_secret' => 'DLEtDS9DFGpPUVG1SVC5A4J15iTd8VPZ68HmOU3BJmtGx',
-    'consumer_key' => 'luI2jnjp3GOuyqKuWsSKIFstD',
-    'consumer_secret' => 'HvEmsAiI8M5TE972F081eBgZDLR8pJnTg2UFdqXs7SC3WpzehT'
+    'oauth_access_token' => '151226369-BwfajRc6ajKp7fqHrnvohDCRZoe4ClDDfMs2n4wM',
+    'oauth_access_token_secret' => '2QvNYhSN2eGq3j2T8FG1QP18QHNwwq4lXfWGOYcJpGBpt',
+    'consumer_key' => 'NlfIcAOtwQcR6F8XQQ5o2aecN',
+    'consumer_secret' => '0QRqiFAaJeSNYPtIk2wmY8IdNVkbcmTvm54leG1nHbnieFCPYv'
 );
 
 $url = "https://api.twitter.com/1.1/search/tweets.json";

@@ -1,0 +1,79 @@
+<!doctype html>
+<html ng-app="lab4">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 4 </title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=BenchNine:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!-- Website Headings -->
+    <h1>Lab 4</h1> 
+    <h3>Responsive App</h3>
+    
+     <!-- Div for Pag -->
+    <div class = "all" ng-controller="mainController">
+      <div class = "col-md-8">
+        <div class = "well well-lg">
+          <h2 class = "pull-left">Tweets</h2>
+          <!-- Search Bar -->
+          <div id = "searchBar" class = "col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for..." ng-model="searchInfo" ng-keypress="Enter($event)">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" ng-click="queryTweet()">Search</button>
+              </span>
+              </input>
+            </div>
+          </div>
+
+          <!-- Tweets--> 
+          <div id = "tweetList">
+            <div class="well" ng-repeat="t in tweets">
+              <!-- Profile Picture -->
+              <img style="float:left" class="img-circle" ng-src="{{t.user.profile_image_url}}" width="48px" height="48px">
+              <!-- Username -->
+              <div class="lead text-left">
+                <a ng-href="http://twitter.com/{{t.user.screen_name}}"> {{t.user.screen_name}} </a>
+              </div>
+              <!-- Date -->
+              <div class="text-right text-small text-muted"> {{(t.created_at).split('+')[0]}}</div>
+              <!-- Actual Tweet -->
+              <div class="text-primary">
+                <p>{{t.text}}</p>
+              </div>
+              <!-- Number of Retweets -->
+              <img class ="retweet" src="retweet.png"> {{t.retweet_count}}
+              <!-- Number of Favorites -->
+              <img class = "favorite" src="favorite.png"> {{t.favorite_count}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col-md-4">
+        <div class = "well well-sm">
+          <h2>Hashtags</h2>
+          <!-- Hashtags -->
+          <div id = "hashList">
+            <!-- If there are no hashtags, tell user -->
+            <div class="text-primary" ng-if="hashtags.length === 0">There are no hashtags at this time</div>
+            <!-- If hashtags, display them -->
+             <div class="well" ng-repeat="h in hashtags">
+              <div class="lead text-center">
+                <a href="https://twitter.com/search?q=%23{{h}}">#{{h}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Scripts at bottom of HTML to follow best usage practices -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+
+  </body>
+</html>
