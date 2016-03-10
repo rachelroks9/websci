@@ -1,0 +1,121 @@
+body {
+  background: #8B0A50;
+  font-family: "BenchNine", sans-serif;
+}
+
+/*heading CSS*/
+h1 {
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+}
+
+h2 {
+  padding: 10px 10px 5px 10px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  color: #8B0A50;
+}
+
+h3 {
+  text-align: center;
+  color: #FFF;
+  margin-top: -10px;
+}
+
+/*well CSS*/
+.well {
+  margin-top: 10px;
+}
+
+#searchBar {
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+#tweetList {
+  min-height: 100px;
+  padding-top: 30px;
+}
+
+input[type="text"] {
+  max-width: 200px;
+}
+
+input[type="number"] {
+  max-width: 100px;
+}
+
+.form-group.col-xs-4 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#hashtags .well {
+  display: none;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.well-lg {
+  margin: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.well-sm {
+  margin: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px;
+}
+
+.well-sm a {
+  color: #F7B3DA;
+}
+
+/*small changes to bootstrap css*/
+.lead {
+  margin-bottom: -20px;
+  font-size: 20px;
+}
+
+.lead a {
+  color: #F7B3DA;
+}
+
+.text-primary {
+  color: #000;
+  font-size: 110%;
+}
+
+.text-muted {
+  font-variant: small-caps;
+  font-size: 110%;
+}
+
+.img-circle {
+  margin-right: 10px;
+}
+
+.retweet, .favorite {
+  width: 15px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+.favorite {
+  margin-left: 10px;
+}
+
+#tweetList {
+  padding-top: 40px;
+}
+
+.waiting .img-responsive {
+  margin: 0 auto;
+
+}
