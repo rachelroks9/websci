@@ -1,0 +1,19 @@
+{
+  "name": "quiz1server",
+  "version": "1.0.0",
+  "description": "This is the code for the second question on quiz one for Web Science Spring 2016.",
+  "main": "angular.min.js",
+  "dependencies": {
+    "init": "^0.1.2",
+    "express": "^4.13.4",
+    "forecast": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
