@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 6 </title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=BenchNine:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body data-ng-app="tweetsApp">
+    <!-- Website Headings -->
+    <h1>Lab 6</h1> 
+    <h3>Node.JS and Tweets.JSON to CSV</h3>
+
+    <!-- Main Controller -->
+    <div data-ng-controller="tweetsController">
+
+      <!-- Tweet Well -->
+      <div class = "col-md-8">
+        <div class = "well well-lg">
+          <h2 class = "pull-left">Tweets</h2>
+          <!-- Query Box, Count Box and Button -->
+          <div id = "searchBar" >
+            <div class="pull-right">
+              <form id="tweet-form">
+                <!-- Query Box -->
+                <div class="form-group col-xs-3"><input type="text" class="form-control input-group-lg" placeholder="Query" data-ng-model="query" id="query"></div>
+
+                <!-- Count Box -->
+                <div class="form-group col-xs-2"><input type="number" class="form-control input-group-lg" placeholder="Count" data-ng-model="tweetCount" value="20" id="count" min="1" max="20"></div>
+
+                <!-- Pull Tweets Button, disabled when count box is empty -->
+                <div class="form-group col-xs-2"><input type="button" name="pull" class="btn btn-default" type="button" data-ng-disabled="!tweetCount" ng-click="ex=false; newQuery(tweetCount, query, select, ex)" value="Load"></button></div>
+
+                <!-- File Type Drop Down Menue -->
+                <div class="form-group col-xs-3">
+                  <select class="form-control" data-ng-model="select">
+                    <option value="" disabled selected>File Type</option>
+                    <option value="JSON">JSON</option>
+                    <option value="CSV">CSV</option>
+                  </select>
+                </div>
+
+                <!-- Export Tweets Button, disabled when count box or file type is empty -->
+                <div class="form-group col-xs-2"><input type="button" name="export" class="btn btn-default" type="button" data-ng-disabled="!tweetCount || !select" ng-click="ex=true; newQuery(tweetCount, query, select, ex)" value="Export"></input></div>
+              </form>
+            </div>
+          </div>
+
+          <div id = "tweetList">
+            <!-- Instructions Div -->
+            <div class="text-primary" data-ng-show="showInstruct">
+              <p>To obtain tweets, do one of the following options:</p>
+              <ol>
+                <li>Keep the query box empty, select number of tweets to display and select what type of document you want to export your tweets in. This will pull tweets from the RPI area.</li>
+                <li>Enter a query in the query box, select number of tweets and select what type of document you want to export your tweets in.</li>
+              </ol>
+            </div>
+
+            <!-- Saved Text Div -->
+            <div class="lead" data-ng-show="showSave">
+              <p id="saveText">{{saveText}}</p>
+            </div>
+
+            <!-- Spinning Wheel Div -->
+            <div class="waiting" data-ng-show="showWait">
+              <img class="img-responsive" src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif" alt="loading..."></div>
+            <div class="well" data-ng-repeat="t in tweets track by $index">
+              
+              <!-- Profile Picture -->
+                  <img style="float:left" class="img-circle" ng-src="{{t.user.profile_image_url}}" width="48px" height="48px">
+                  
+                  <!-- Username -->
+                  <div class="lead text-left">
+                    <a ng-href="http://twitter.com/{{t.user.screen_name}}"> {{t.user.screen_name}} </a>
+                  </div>
+                  
+                  <!-- Date -->
+                  <div class="text-right text-small text-muted"> {{(t.created_at).split('+')[0]}}</div>
+                  
+                  <!-- Actual Tweet -->
+                  <div class="text-primary">
+                    <p>{{t.text}}</p>
+                  </div>
+                  
+                  <!-- Number of Retweets -->
+                  <img class ="retweet" src="retweet.png"> {{t.retweet_count}}
+                  
+                  <!-- Number of Favorites -->
+                  <img class = "favorite" src="favorite.png"> {{t.favorite_count}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Hashtag Well -->
+      <div class = "col-md-4">
+        <div class = "well well-sm">
+          <h2>Hashtags</h2>
+          <!-- Hashtags -->
+          <div id = "hashList">
+            <!-- If there are no hashtags, tell user -->
+            <div class="text-primary" ng-if="hashtags.length === 0">There are no hashtags at this time</div>
+
+            <!-- If hashtags, display them -->
+            <div class="well" ng-repeat="h in hashtags track by $index">
+              <div class="lead text-center">
+                <a ng-href="https://twitter.com/search?q=%23{{h}}">#{{h}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Scripts at bottom of HTML to follow best usage practices -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="angular-socket.min.js"></script> <!-- btford.socket-io -->
+
+  </body>
+
+</html>
