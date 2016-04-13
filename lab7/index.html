@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab 7</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=BenchNine:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="tweetsApp">
+<!-- Website Headings -->
+<h1>Lab 7</h1>
+<h3>Node.JS, mongoDB and Tweets</h3>
+
+<!-- Main Controller -->
+<div ng-controller="tweetsController">
+  <!-- Tweet Well -->
+    <div class = "well well-lg">
+      <h2 class = "pull-left">Tweets</h2>
+
+      <!-- Search Bar -->
+      <div id="searchBarStuff">
+        <div class="form-inline">
+          <div class="form-group">
+            <!-- Query Box -->
+            <input type="text" class="form-control" ng-model="search" id="searchBar" placeholder="Query">
+
+            <!-- Count Box -->
+            <input type="number" class="form-control input-group-lg" data-ng-model="count" id="tweetCount" min="1" max="20">
+
+            <!-- Pull Tweets Button, disabled when count box is empty -->
+            <button class="btn btn-secondary" id="submitButton" type="button" data-ng-disabled="" ng-click="newQuery()">Load</button>
+          </div>
+        </div>
+        <div class="form-inline">
+          <div class="form-group">
+              <select class="form-control" data-ng-model="etype">
+                <option value="" disabled selected>File Type</option>
+                <option value="JSON">JSON</option>
+                <option value="CSV">CSV</option>
+              </select>
+
+              <button class="btn btn-secondary" id="exportButton" type="button" data-ng-disabled="" ng-click="exportInfo()">Export</button>
+              
+              <span id="lab7">
+                <button class="btn btn-secondary" id="build" type="button" ng-click="buildDB()">Build DB</button>
+
+                <button class="btn btn-secondary" id="read" type="button" ng-click="readDB()">Read DB</button>
+
+                <input type="text" class="form-control" data-ng-model="fName" id="name" placeholder="File Name">
+
+                <button class="btn btn-secondary" id="xml" type="button" data-ng-disabled="!fName" ng-click="xmlEx()">XML</button>
+              </span>
+          </div>
+        </div>
+      </div>
+      <!--End Search Bar-->
+
+      <!-- Tweet List -->
+      <div id = "tweetList">
+        <!-- Instructions Div -->
+        <div id = "instructions" style="display: inline;">
+          <div class="text-primarys">
+            <p>To obtain tweets, do one of the following options:</p>
+            <ol>
+              <li>Keep the query box empty, select number of tweets to display and select what type of document you want to export your tweets in. This will pull tweets from the RPI area.</li>
+              <li>Enter a query in the query box, select number of tweets and select what type of document you want to export your tweets in.</li>
+            </ol>
+          </div>
+        </div>
+
+        
+        <!-- Spinning Wheel Div -->
+        <img id="loading" style="display: none;" class="img-responsive" src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif" alt="Loading...">
+
+
+        <!-- Each Tweet Well -->
+        <div class="well" ng-repeat="t in tweets">
+          <!-- Profile Picture -->
+          <img style="float:left" class="img-circle" ng-src="{{t.user.profile_image_url}}" width="48px" height="48px">
+
+          <!-- Username -->
+          <div class="lead text-left">
+            <a ng-href="http://twitter.com/{{t.user.screen_name}}"> {{t.user.screen_name}} </a>
+          </div>
+
+          <!-- Date -->
+          <div class="text-right text-small text-muted"> {{(t.created_at).split('+')[0]}}</div>
+
+          <!-- Actual Tweet -->
+          <div class="text-primary">
+            <p>{{t.text}}</p>
+          </div>
+
+          <!-- Number of Retweets -->
+          <img class ="retweet" src="retweet.png"> {{t.retweet_count}}
+
+          <!-- Number of Favorites -->
+          <img class = "favorite" src="favorite.png"> {{t.favorite_count}}
+        </div>
+        <!-- End Each Tweet Well -->
+      </div>
+      <!-- End Tweet List -->
+    </div>
+    <!-- End Well Large -->
+
+</div>
+<!-- End Controller -->
+
+<!-- Scripts at bottom of HTML to follow best usage practices -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

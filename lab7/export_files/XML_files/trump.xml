@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<tweetsInfo>
+  <created_at>created_at text</created_at>
+  <id>id text</id>
+  <text>text text</text>
+  <user>
+    <user_id>user_id text</user_id>
+    <user_name>user_name text</user_name>
+    <user_screen_name>user_screen_name text</user_screen_name>
+    <user_location>user_location text</user_location>
+    <user_followers_count>user_followers_count text</user_followers_count>
+    <user_friend_count>user_friend_count text</user_friend_count>
+    <user_created_at>user_created_at text</user_created_at>
+    <user_time_zone>user_time_zone text</user_time_zone>
+    <user_profile_background_color>user_profile_background_color text</user_profile_background_color>
+    <user_profile_image_url>user_profile_image_url text</user_profile_image_url>
+  </user>
+  <geo>geo text</geo>
+  <coordinates>coordinates text</coordinates>
+  <place>place text</place>
+</tweetsInfo>
