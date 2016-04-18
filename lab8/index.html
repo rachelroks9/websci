@@ -48,7 +48,30 @@
         <!-- Spinning Wheel Div -->
         <img id="loading" style="display: none;" class="img-responsive" src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif" alt="Loading...">
 
-        <div id="results"></div>
+        <div id="results" style="display: none;">
+          <!-- Each Tweet Well -->
+        
+          <table class="table table-bordered" >
+            <thead>
+              <tr>
+                <td> School </td>
+                <td> Campus Size </td>
+                <td> Average Class Size </td>
+              </tr>
+            <thead>
+
+            <tbody ng-repeat="s in stuff">
+              <tr>
+                <td> {{s.school.value}} </td>
+                <td> {{s.campusSize.value}} </td>
+                <td> {{s.averageClassSize.value}} </td>
+              </tr>
+            </tbody>
+          </table>
+
+        <!-- End Each Tweet Well -->
+
+        </div>
 
       </div>
       <!-- End Tweet List -->

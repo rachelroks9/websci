@@ -22,44 +22,19 @@ page.controller("sparqlController",["$scope", "$http", function($scope, $http) {
     $.post(url, {search: $scope.search});
 
     // gets the tweets from twitter
-    $http.get(url).success(function(response) {
+    $http.get(url).then(function(response) {
       // puts the tweets in the scope from the controller
       document.getElementById("loading").style.display = "none";
-      // // function to help parse the date from the tweets 
-      // $scope.mySplit = function(string, nb) {
-      //   var array = string.split(" ");
-      //   return array[nb];
-      // }
-    });
-  };
-  
-  $scope.exportInfo = function() {
-    // gets the file type from the user
-    $.post('/export', {etype: $scope.etype});
-    $http.get('/export').success(function(data) {
+      document.getElementById("results").style.display = "inline";
+
+      $scope.stuff = response.data;
+      // function to help parse the date from the tweets 
+      $scope.mySplit = function(string, nb) {
+        var array = string.split(" ");
+        return array[nb];
+      }
     });
   };
 
-  $scope.buildDB = function() {
-    $http.get('/build').success(function(data) {
-      
-    });
-  };
-
-  $scope.readDB = function() {
-    // gets the file type from the user
-    $http.get('/read').then(function(response) {
-      
-    });
-  };
-
-   $scope.xmlEx = function() {
-    // gets the file type from the user
-    $.post('/xml', {fName: $scope.fName});
- 
-    $http.get('/xml').success(function(data) {
-      
-    });
-  };
 
 }]);

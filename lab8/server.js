@@ -31,49 +31,23 @@ app.post('/query', function(req, res) {
   search = req.body.search;
 });
 
-app.get('/query', function(req, res) {
+app.get('/query', function(req, response) {
   var sparqlClient = new sparql.Client('http://dbpedia.org/sparql');
   sparqlClient.query(search, function(err, res) {
+    // problem is that it does not go in error
     if (err) { // query has error
       console.log('>> ERROR ' + err);
+      // alert user there is an error with the following text
+      "There is an error in your query. Please fix this and try again.";
     } else { // query is successful
       data = res.results.bindings;
       header = res.head.vars;
+
       console.log('>> EXECUTED sparql query');
       console.log(search);
       console.log('\n');
-      console.log('\n');
-      console.log('\n');
       console.log(header);
-      console.log('\n');
-      console.log(data);
+      response.status(200).json(data);
     }
   });
-
-	// res.status(200).json(data, header);
-
-});
-
-app.post('/export', function(req, res) {
-	
-});
-
-app.get('/export', function(req, res) {
-
-});
-
-app.get('/build', function(req, res) {
-
-});
-
-app.get('/read', function(req, res) {
-  
-});
-
-app.post('/xml', function(req, res) {
-  
-});
-
-app.get('/xml', function(req, res) {
-     
 });

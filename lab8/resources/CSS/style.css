@@ -87,54 +87,17 @@ h3 {
   background-color: black;
 }
 
-#results ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#results ul > li {
-    display: block;
-}
-
-#results ul > li li {
-    display: inline-block;
-    margin: 1px;
-    padding: 5px;
-    font-size: 12px;
-}
-
-#results ul > li li:nth-of-type(1) {
-    width: 350px
-}
-
-#results ul > li li:nth-of-type(2) {
-    width: 350px
-}
-
-#results ul > li li:nth-of-type(3) {
-    width: 350px
-}
-
-#results ul > li:nth-of-type(odd) li {
-    background: #fbfbfb
-}
-
-#results ul > li:nth-of-type(even) li {
-    background: #f0f0ee
-}
-
-#results ul > li.heading li {
-    font-family: 'Rochester', cursive;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: capitalize;
-    color: #fff;
-    background: #fb755a
-}
-
 #searchBar {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.table-bordered {
+  margin-top: 10px;
+}
+
+.table-bordered thead {
+  background-color: #C1C1C1;
+  font-weight: bold;
 }
