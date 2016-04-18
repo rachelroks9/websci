@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
     // hide spinner
     $('#spinner').hide();
     // display error message
-    var htmlString = "<p class='error'>Your query has an error :(</p>";
+    var htmlString = "<p class='error'>Your query has an error</p>";
     $('#results').html(htmlString);
   });
 });
