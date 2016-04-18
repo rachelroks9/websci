@@ -1,11 +1,14 @@
 {
-  "name": "twitter",
-  "version": "0.0.1",
-  "description": "Lab 6 for Web Science Systems Development.",
+  "name": "lab7",
+  "version": "1.0.0",
+  "description": "Rachel Blacker's lab 7 for Web Science Development for the Spring 2016 semester.",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
-    "twitter": "1.2.5"
+    "json2csv": "^3.2.0",
+    "jstoxml": "^0.2.3",
+    "mongodb": "^2.1.16",
+    "twitter": "^1.2.5"
   },
   "license": "UNLICENSED",
   "repository": "None"

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab 8</title>
+  <link rel="stylesheet" href="resources/CSS/bootstrap.css">
+  <link rel="stylesheet" href="resources/CSS/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Neucha|Rochester' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-app="sparqlApp">
+<!-- Website Headings -->
+<h1>Lab 8</h1>
+<h3>Node.JS, SPARQL and RDF {{searchText}} {{stuff}}</h3>
+
+<!-- Main Controller -->
+<div ng-controller="sparqlController">
+
+  <div class = "well well-md">
+    <div class="form-group">
+<!--       <input type="text" lass="form-control" ng-model="searchText" /> -->
+
+      <textarea type="text" class="form-control" ng-model="stuff" placeholder="Query" ng-init="initial"></textarea>
+
+      <button class="btn btn-secondary" id="querySubmit" type="button" ng-click="querySearch()">Submit</button>
+
+      
+    </div>
+  </div>
+
+  <div class = "well well-md">
+    <h2>Results</h2>
+
+    <p>Default query finds 10 schools and its campus size and average class size. Results are sorted by campus size.</p>
+
+    <img id="loading" style="display: none;" class="img-responsive" src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif" alt="Loading...">
+
+    <div id="results"></div>
+  </div>
+
+</div>
+
+<!-- Scripts at bottom of HTML to follow best usage practices -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="resources/JS/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="resources/JS/bootstrap.min.js"></script>
+
+</body>
+</html>

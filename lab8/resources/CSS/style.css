@@ -1,0 +1,135 @@
+body {
+  background: #ADEAEA;
+  font-family: 'Neucha', Arial, sans-serif;
+}
+
+/*heading CSS*/
+h1 {
+  text-align: center;
+  color: #B473AC;
+  font-weight: bold;
+  font-family: 'Rochester', cursive;
+  padding-bottom: 5px;
+}
+
+h2 {
+  padding: 10px 10px 5px 10px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  color: #B473AC;
+  font-family: 'Rochester', cursive;
+}
+
+h3 {
+  text-align: center;
+  color: #B473AC;
+  margin-top: -10px;
+}
+
+/*well CSS*/
+.well {
+  margin-top: 10px;
+}
+
+.well-md {
+  margin: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.well-sm {
+  margin: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px;
+}
+
+.well-sm a {
+  color: #F7B3DA;
+}
+
+/*small changes to bootstrap css*/
+.lead {
+  margin-bottom: -20px;
+  font-size: 20px;
+}
+
+.lead a {
+  color: #F7B3DA;
+}
+
+.text-primary {
+  color: #000;
+  font-size: 110%;
+}
+
+.text-muted {
+  font-variant: small-caps;
+  font-size: 110%;
+}
+
+#query {
+  font-family: 'Neucha', Arial, sans-serif;
+  border-bottom: 1.5px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-right: 10px;
+  padding: 5px;
+  min-width: 100%;
+  height: 115px
+}
+
+#spinner {
+  display: none;
+  background-color: black;
+}
+
+#results ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#results ul > li {
+    display: block;
+}
+
+#results ul > li li {
+    display: inline-block;
+    margin: 1px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#results ul > li li:nth-of-type(1) {
+    width: 350px
+}
+
+#results ul > li li:nth-of-type(2) {
+    width: 350px
+}
+
+#results ul > li li:nth-of-type(3) {
+    width: 350px
+}
+
+#results ul > li:nth-of-type(odd) li {
+    background: #fbfbfb
+}
+
+#results ul > li:nth-of-type(even) li {
+    background: #f0f0ee
+}
+
+#results ul > li.heading li {
+    font-family: 'Rochester', cursive;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    background: #fb755a
+}
+

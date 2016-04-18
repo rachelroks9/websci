@@ -1,0 +1,6 @@
+section#sub-header
+  section.container
+    form#query-form(autocomplete="off")
+      textarea#query(name="query", required="required", placeholder="SPARQL query")
+        | #{query.replace("    ", "\n\t").replace("    ", "\n\t").replace("    ", "\n\t").replace("    ", "\n\t").replace("    ", "\n")}
+      input#query-submit(name="submit", type="submit", value="Run Query")

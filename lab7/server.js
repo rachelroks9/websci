@@ -7,14 +7,16 @@ var server = require('http').Server(app);
 var bodyParser = require('body-parser');
 var json2csv = require('json2csv');
 var mongodb = require('mongodb');
-var builder = require('xmlbuilder');
+var jstoxml = require('jstoxml');
 
 // global variables
 var tweetsBuffer = [];
 var JSONExists = false;
 var CSVExists = false;
+var MongoClient = mongodb.MongoClient;
+var url = 'mongodb://localhost:27017/ITWS4500-S16-blackr2-tweets-db';
 
-//starts up the server
+// connect on port 3000
 app.listen(3000, function() {
 	console.log("Server up on localhost:3000");
 });
@@ -31,7 +33,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/tweets', function(req, res) {
-	//Twitter API credentials
+	// twitter object
 	var client = new twitter({
 		consumer_key: 'NlfIcAOtwQcR6F8XQQ5o2aecN',
     consumer_secret: '0QRqiFAaJeSNYPtIk2wmY8IdNVkbcmTvm54leG1nHbnieFCPYv',
@@ -39,37 +41,36 @@ app.get('/tweets', function(req, res) {
     access_token_secret: '2QvNYhSN2eGq3j2T8FG1QP18QHNwwq4lXfWGOYcJpGBpt'
 	});
 
-	//default number of tweets being loaded
-	var maxCount = 10;
+	// default number of tweets being loaded
+	var maxCount = 20;
 	var exportType = "";
 	
-	//use the query the user wants if there is one, else set the query to RPI's location
+	// if something is in query box
 	if(req.query && req.query.search) {
 		var query = {track: req.query.search}
-	} else {
+	} 
+  // if query box is empty
+  else {
 		var query = {locations:'-73.68,42.72,-73.67,42.73'};
 	}
 
 	client.stream('statuses/filter', query, function(stream) {
-		//if a user puts in a number of tweets that they want, change the variable
+		// set number of tweets user wants
 		if (req.query.count) {
 			maxCount = req.query.count;
 		}
 		stream.on('data', function(tweet) {
-			//shows tweets in the console so I know the app is getting them
-			// console.log(tweet.text);
-			//adds the tweet to the array
+			// adds the tweet to the array
 			tweetsBuffer.push(tweet);
-			//once the array has the number of tweets the user wants or the default number
+			// stop getting tweets if reach number the user wants to display
 			if(tweetsBuffer.length == maxCount) {
-				//place the tweets onto the index.html file
+				// put the tweets on index.html file
 				res.status(200).json(tweetsBuffer);
-				//stop the stream
+				// stop the stream of tweets
 				stream.destroy();
 			}
 		});
 		
-
 		stream.on('error', function(error) {
 			console.log(error);
 			throw error;
@@ -79,34 +80,35 @@ app.get('/tweets', function(req, res) {
 
 app.post('/export', function(req, res) {
 	var exportT = req.body.etype;
-	//if the user wants a JSON file
+	// if the user wants a JSON file
 	if (exportT == "JSON") {
 		fs.exists("export_files/JSON_files/ITWS4500-S16-blackr2-tweets.json", function(exists) {
-			//if the file already exists
+			// if the file already exists
 			if (exists) {
 				JSONExists = true;
 			}
-			//if the file doesn't exist
+			// if the file doesn't exist
 			else {
 				JSONExists = false;
 			}
 		});
-		//write to the JSON file
+		// write to the JSON file
 	 	fs.writeFile("export_files/JSON_files/ITWS4500-S16-blackr2-tweets.json", JSON.stringify(tweetsBuffer));
 	}
-	//if the user wants a CSV file
+	// if the user wants a CSV file
 	else if (exportT == "CSV") {
 		fs.exists("export_files/CSV_files/ITWS4500-S16-blackr2-tweets.csv", function(exists) {
-			//if the file already exists
+			// if the file already exists
 			if (exists) {
 				CSVExists = true;
 			}
-			//if the file doesn't exist
+			// if the file doesn't exist
 			else {
 				CSVExists = false;
 			}
 		});
 
+    // CSV file information
     var csvFile = "ITWS4500-S16-blackr2-tweets.csv";
     var fields = ["created_at","id","text","user.id","user.name","user.screen_name","user.location","user.followers_count","user.friends_count","user.created_at","user.time_zone","user.profile_background_color","user.profile_image_url","geo","coordinates","place"];
     var headerFields = ["created_at","id","text","user_id","user_name","user_screen_name","user_location","user_followers_count","user_friends_count","user_created_at","user_time_zone","user_profile_background_color","user_profile_image_url","geo","coordinates","place"];
@@ -125,8 +127,7 @@ app.post('/export', function(req, res) {
 });
 
 app.get('/export', function(req, res) {
-	//these messages are posted in a JavaScript alert
-	//each message varies depending on if the files exist or not
+	// messages to be sent on alert to user
 	if (JSONExists && CSVExists) {
     return res.json({myJSON: 'A JSON file was previously created. It has been updated with the following tweets.', myCSV: 'A CSV file was previously created. It has been updated with the following tweets.'});
   }
@@ -141,113 +142,101 @@ app.get('/export', function(req, res) {
   }
 });
 
+
 app.get('/build', function(req, res) {
+  // connect to mongo database
   MongoClient.connect(url, function (err, db) {
     if (err) {
       console.log('Unable to connect to the mongoDB server. Error:', err);
     } else {
-      //HURRAY!! We are connected. :)
       console.log('Connection established to', url);
-
-      // Get the documents collection
-    var collection = db.collection('tweetsInfo');
-
-
-
-
-      //Close connection
-      db.close();
+      // delete current database information
+      db.collection('tweetsInfo', {}, function (err, result) {
+        result.remove({}, function (error, res) {
+          if (error) {
+            console.log(error);
+          } 
+          db.close();
+        });
+      });
     }
+  });
+
+  // connect to mongo database
+  MongoClient.connect(url, function (err, db) {
+    if (err) {
+      console.log('Unable to connect to the mongoDB server. Error:', err);
+    } else {
+      var tweetsStuff = JSON.stringify(tweetsBuffer);
+      var jsonStuff = JSON.parse(tweetsStuff)
+      var collection = db.collection('tweetsInfo');
+
+      // put all of the tweets in the database
+      collection.insert(jsonStuff, function (err, result) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log ("Inserted tweets into database.");
+          db.close();
+        }
+      });
+      // text for alert
+      return res.json({building: "A database has been created with the following tweets."});
+    }
+
   });
 });
 
 app.get('/read', function(req, res) {
+  // connect to mongo database
    MongoClient.connect(url, function (err, db) {
-    if (err) {
-      console.log('Unable to connect to the mongoDB server. Error:', err);
-    } else {
-      //HURRAY!! We are connected. :)
-      console.log('Connection established to', url);
-
-      // Get the documents collection
-    var collection = db.collection('tweetsInfo');
-
-
-    // find tweets users
-    collection.find({name: 'XXXXXX'}).toArray(function (err, result) {
+    db.collection('tweetsInfo', function (err, collection) {
       if (err) {
-        console.log(err);
-      } else if (result.length) {
-        console.log('Found:', result);
+        console.log('Unable to connect to the mongoDB server. Error:', err);
       } else {
-        console.log('No document(s) found with defined "find" criteria!');
+        // pull all of the tweets in the database and output them to user
+        collection.find().toArray(function (err, docs) {
+          if (err) {
+            console.log (err);
+          } else {
+            db.close();
+            res.status(200).json(docs);
+          }
+        });        
       }
     });
-
-      //Close connection
-      db.close();
-    }
   });
-
-
 });
 
 app.post('/xml', function(req, res) {
-  // console.log(req);
   var fileName = req.body.fName;
+  var xml = "";
 
-  var xml = builder.create('tweetsInfo')
-    .ele('created_at')
-      .txt('created_at text')
-      .up()
-    .ele('id')
-      .txt('id text')
-      .up()
-    .ele('text')
-      .txt('text text')
-      .up()
-    .ele('user')
-      .ele('user_id')
-        .txt('user_id text')
-        .up()
-      .ele('user_name')
-        .txt('user_name text')
-        .up()
-      .ele('user_screen_name')
-        .txt('user_screen_name text')
-        .up()
-      .ele('user_location')
-        .txt('user_location text')
-        .up()
-      .ele('user_followers_count')
-        .txt('user_followers_count text')
-        .up()
-      .ele('user_friend_count')
-        .txt('user_friend_count text')
-        .up()
-      .ele('user_created_at')
-        .txt('user_created_at text')
-        .up()
-      .ele('user_time_zone')
-        .txt('user_time_zone text')
-        .up()
-      .ele('user_profile_background_color')
-        .txt('user_profile_background_color text')
-        .up()
-      .ele('user_profile_image_url')
-        .txt('user_profile_image_url text')
-        .up()
-      .up()
-    .ele('geo')
-      .txt('geo text')
-      .up()
-    .ele('coordinates')
-      .txt('coordinates text')
-      .up()
-    .ele('place')
-      .txt('place text')
-      .up()
-    .end({ pretty: true});
+  // connect to mongo database
+  MongoClient.connect(url, function (err, db) {
+    db.collection('tweetsInfo', function (err, collection) {
+      if (err) {
+        console.log('Unable to connect to the mongoDB server. Error:', err);
+      } else {
+        // pull all of the tweets in the database
+        collection.find().toArray(function (err, docs) {
+          if (err) {
+            console.log (err);
+          } else {
+            // put all of the tweets information to XML file
+            xml = jstoxml.toXML(docs, {header: true, indent: "  "});
+            fs.writeFile("export_files/XML_files/" + fileName + ".xml", xml);
+            db.close();
+          }
+        });        
+      }
+    });
+  });
 
-  fs.writeFile("export_files/XML_files/" + fileName + ".xml", xml);
+  
+});
+
+// text for alert to user
+app.get('/xml', function(req, res) {
+   return res.json({myXML: "An XML file has been created with the following tweets."});   
 });

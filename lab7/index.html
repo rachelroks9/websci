@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Lab 7</title>
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="resources/CSS/bootstrap.css">
+  <link rel="stylesheet" href="resources/CSS/style.css">
   <link href='https://fonts.googleapis.com/css?family=BenchNine:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body ng-app="tweetsApp">
@@ -40,7 +40,7 @@
                 <option value="CSV">CSV</option>
               </select>
 
-              <button class="btn btn-secondary" id="exportButton" type="button" data-ng-disabled="" ng-click="exportInfo()">Export</button>
+              <button class="btn btn-secondary" id="exportButton" type="button" data-ng-disabled="!etype" ng-click="exportInfo()">Export</button>
               
               <span id="lab7">
                 <button class="btn btn-secondary" id="build" type="button" ng-click="buildDB()">Build DB</button>
@@ -63,8 +63,17 @@
           <div class="text-primarys">
             <p>To obtain tweets, do one of the following options:</p>
             <ol>
-              <li>Keep the query box empty, select number of tweets to display and select what type of document you want to export your tweets in. This will pull tweets from the RPI area.</li>
-              <li>Enter a query in the query box, select number of tweets and select what type of document you want to export your tweets in.</li>
+              <li>Keep the query box empty and select number of tweets to get. This will pull tweets from the RPI area.</li>
+              <li>Enter a query in the query box and select number of tweets to get. This will pull tweets that match your query.</li>
+            </ol>
+
+            <p>Button Information:</p>
+            <ol>
+              <li>"Load" will load all of the tweets for your query, but not display them.</li>
+              <li>"Export" will be disabled until a file type is selected. Once you load your tweets, you can export the information to either a JSON or CSV file.</li>
+              <li>"Build DB" will build a database with all of your tweets. Build DB will only work once Load has been done.</li>
+              <li>"Read DB" will display all of your tweets. Read DB will only work once Build DB has been done.</li>
+              <li>"XML" will be disabled until a file name is written. Once a database has been created, you can export that information to an XML file.</li>
             </ol>
           </div>
         </div>
@@ -93,10 +102,10 @@
           </div>
 
           <!-- Number of Retweets -->
-          <img class ="retweet" src="retweet.png"> {{t.retweet_count}}
+          <img class ="retweet" src="resources/img/retweet.png"> {{t.retweet_count}}
 
           <!-- Number of Favorites -->
-          <img class = "favorite" src="favorite.png"> {{t.favorite_count}}
+          <img class = "favorite" src="resources/img/favorite.png"> {{t.favorite_count}}
         </div>
         <!-- End Each Tweet Well -->
       </div>
@@ -109,9 +118,9 @@
 
 <!-- Scripts at bottom of HTML to follow best usage practices -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="angular.min.js"></script>
+<script src="resources/JS/angular.min.js"></script>
 <script src="app.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="resources/JS/bootstrap.min.js"></script>
 </body>
 </html>

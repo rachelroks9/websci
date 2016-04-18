@@ -1,0 +1,155 @@
+* {
+    outline: none
+}
+
+body {
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #3b3a35;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', Times New Roman, Times, serif;
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    display: block;
+    width: 800px;
+    margin: 0 auto
+}
+
+header {
+    background: #5e3448;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 53px;
+    padding: 5px 0
+}
+
+#sub-header {
+    background: #fee0da;
+    padding: 6px 0
+}
+
+#query {
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    background: transparent;
+    color: #5e3448;
+    border-bottom: 2px solid #5e3448;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-right: 10px;
+    padding: 5px;
+    width: 560px;
+    height: 88px
+}
+
+#query-submit {
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    background: transparent;
+    border: 2px solid #5e3448;
+    color: #5e3448;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    vertical-align: 11px;
+    margin-left: 10px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+#query-submit:hover {
+    color: #ecdfbd;
+    background: #5e3448
+}
+
+main.container {
+    width: 1086px;
+}
+
+main.container h2 {
+    font-size: 34px;
+    padding-top: 20px;
+    color: #5e3448
+}
+
+main.container p {
+    font-size: 12px;
+    margin: 0 0 15px;
+}
+
+main.container p.error {
+    width: 148px;
+    padding: 5px;
+    color: #fff;
+    background: #fb6648
+}
+
+#spinner {
+    display: none;
+    text-align: center
+}
+
+#results {
+    color: #5e3448;
+}
+
+#results ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#results ul > li {
+    display: block;
+}
+
+#results ul > li li {
+    display: inline-block;
+    margin: 1px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#results ul > li li:nth-of-type(1) {
+    width: 350px
+}
+
+#results ul > li li:nth-of-type(2) {
+    width: 350px
+}
+
+#results ul > li li:nth-of-type(3) {
+    width: 350px
+}
+
+#results ul > li:nth-of-type(odd) li {
+    background: #fbfbfb
+}
+
+#results ul > li:nth-of-type(even) li {
+    background: #f0f0ee
+}
+
+#results ul > li.heading li {
+    font-family: 'Playfair Display', Times New Roman, Times, serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    background: #fb755a
+}
+
+
