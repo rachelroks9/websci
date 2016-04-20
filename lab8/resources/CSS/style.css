@@ -70,6 +70,7 @@ h3 {
   font-size: 110%;
 }
 
+/*custom css*/
 #query {
   font-family: 'Neucha', Arial, sans-serif;
   border-bottom: 1.5px solid black;
@@ -100,4 +101,24 @@ h3 {
 .table-bordered thead {
   background-color: #C1C1C1;
   font-weight: bold;
+}
+
+#loading {
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+}
+
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed > li {
+  text-indent: -10px;
+}
+
+ul.dashed > li:before {
+  content: "-  ";
 }

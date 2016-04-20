@@ -14,70 +14,75 @@
 
 <!-- Main Controller -->
 <div ng-controller="sparqlController">
-  <!-- Tweet Well -->
-    <div class = "well well-md">
-      <h2>Sparql Query</h2>
+  <!-- Query Well -->
+  <div class = "well well-md">
+    <h2>Sparql Query</h2>
 
-      <!-- Search Bar -->
-      <div id="searchBarStuff">
-        
-          <div class="form-group">
-            <!-- Query Box -->
-            <textarea type="text" class="form-control" rows="6" ng-model="search" placeholder="SPARQL Query" id="searchBar"></textarea>
+    <!-- Search Bar -->
+      <div class="form-group">
+        <!-- Query Box -->
+        <textarea type="text" class="form-control" rows="6" ng-model="search" placeholder="SPARQL Query" id="searchBar"></textarea>
 
-            <button class="btn btn-secondary" id="submitButton" type="button" data-ng-disabled="!search" ng-click="newQuery()">Run Query</button>
-          </div>
-        </div>
+        <!-- Run Query Button -->
+        <button class="btn btn-secondary" id="submitButton" type="button" data-ng-disabled="!search" ng-click="newQuery()">Run Query</button>
       </div>
       <!--End Search Bar-->
+  </div>
+  <!-- End Query Well -->
+    
 
-      <!-- Tweet List -->
-      <div class = "well well-md">
-        <h2>Results</h2>
-        <!-- Instructions Div -->
-        <div id = "instructions" style="display: inline;">
-          <div class="text-primarys">
-            <p>Intructions:</p>
-            <ol>
-              <li>Keep the query box with the default search. Press "Run Query." This wll find 10 schools and its campus and average class size. Results are sorted by campus size.</li>
-              <li>Enter your own SPARQL query into the query box and select "Run Query."</li>
-            </ol>
-          </div>
-        </div>
-
-        <!-- Spinning Wheel Div -->
-        <img id="loading" style="display: none;" class="img-responsive" src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif" alt="Loading...">
-
-        <div id="results" style="display: none;">
-          <!-- Each Tweet Well -->
-        
-          <table class="table table-bordered" >
-            <thead>
-              <tr>
-                <td> School </td>
-                <td> Campus Size </td>
-                <td> Average Class Size </td>
-              </tr>
-            <thead>
-
-            <tbody ng-repeat="s in stuff">
-              <tr>
-                <td> {{s.school.value}} </td>
-                <td> {{s.campusSize.value}} </td>
-                <td> {{s.averageClassSize.value}} </td>
-              </tr>
-            </tbody>
-          </table>
-
-        <!-- End Each Tweet Well -->
-
-        </div>
-
+  <!-- Result Well -->
+  <div class = "well well-md">
+    <h2>Results</h2>
+    <!-- Instructions Div -->
+    <div id = "instructions" style="display: inline;">
+      <div class="text-primarys">
+        <p>How to Query:</p>
+        <ol>
+          <li>Keep the query box with the default search. Press "Run Query." This will find 10 schools and its campus and average class size. Results are sorted by campus size.</li>
+          <li>Enter your own SPARQL query into the query box and select "Run Query."</li>
+        </ol>
       </div>
-      <!-- End Tweet List -->
     </div>
-    <!-- End Well Medium -->
+    <!-- End Instructions Div -->
 
+    <br />
+
+    <!-- Things to Note Div -->
+    <div id = "note">
+      <div class="text-primarys">
+        <p>Please Keep In Mind:</p>
+        <ul class="dashed">
+          <li>If your query does not seem to load (i.e. the loading circle is still visible) then there is an error in your query. Please check the error console to see exactly what is wrong with your query.</li>
+          <li>It is recommended that you refresh the page in between all queries.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Things to Note Div -->
+
+    <!-- Spinning Wheel Div -->
+    <img id="loading" style="display: none;" class="img-responsive" src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif" alt="Loading...">
+
+    <!-- Table -->
+    <div id="results" style="display: none;">
+      <table class="table table-bordered" >
+        <thead>
+          <tr>
+            <th ng-repeat="field in headers" style="text-transform: capitalize"> {{field}} </th>
+          </tr>
+        <thead>
+
+          <tbody>
+            <tr ng-repeat="row in stuff.slice(1,stuff.length)">
+              <td ng-repeat="field in headers"> {{row[field].value}} </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+    <!-- End Table -->
+
+  </div>
+  <!-- End Result Well -->
 </div>
 <!-- End Controller -->
 
