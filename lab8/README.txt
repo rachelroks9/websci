@@ -9,6 +9,7 @@ One challenge I found with this lab was how to show the headers without hardcodi
 
 It was interesting coming up with my own query. Once I got the syntax down, it was fun playing around trying to create a “meaningful” query. One thing that would have helped with this lab is if there is more documentation about SPARQL online, but there is nothing the instructors can do about that. 
 
+For my meaningful query, I set the default query to obtain 10 schools and display their campus size and average class size. I then ordered the results by defending order of campus size. 
 
 Resources:
 
