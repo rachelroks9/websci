@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab 9</title>
+  <link rel="stylesheet" href="resources/CSS/bootstrap.css">
+  <link rel="stylesheet" href="resources/CSS/style.css">
+  <link rel="stylesheet" href="resources/CSS/animate.css">
+  <link href='https://fonts.googleapis.com/css?family=BenchNine:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
+</head>
+<body ng-app="tweetsApp">
+
+
+<!-- Main Controller -->
+<div ng-controller="tweetsController">
+
+  <!-- Landing Page Upon Initial Load -->
+  <div id="landing-page">
+    <h1 class="animated bounceIn">Lab 9: Putting It All Together</h1>
+    <h3>A Twitter application by <span>Rachel Blacker</span></h2>
+    
+    <button class="btn btn-secondary" type="button" name="hideLandingPage" id="hide-landing-page">Get Started</button>
+  </div>
+  <!-- End Landing Page -->
+
+  <!-- Twitter App -->
+  <div id="twitter-app">
+    <!-- Website Headings -->
+    <h1>Lab 9</h1>
+    <h3>Putting It All Together</h3>
+
+    <!-- Large Well -->
+      <div class = "well well-lg">
+        <!-- Search Bar -->
+        <div id="searchBarStuff">
+          <div class="form-inline">
+            <div class="form-group">
+              <!-- Step One -->
+              <span id="step1" ng-show="step1">
+                <h4>Step 1: Obtain Tweets</h4>
+                <p>Option 1: Keep the query box empty and select number of tweets to get. This will pull tweets from the RPI area.</p>
+                <p class="second">Option 2: Enter a query in the query box and select number of tweets to get. This will pull tweets that match your query.</p>
+
+                <div class="col-xs-offset-1">
+                  <!-- Query Box -->
+                  <div class="col-xs-4">
+                      <input type="text" class="form-control" ng-model="search" id="searchBar" placeholder="Query">
+                  </div>   
+
+                  <!-- Count Box -->                         
+                  <div class="col-xs-3">
+                      <input type="number" class="form-control input-group-lg" data-ng-model="count" id="tweetCount" min="1" max="20">
+                  </div>
+
+                  <!-- Pull Tweets Button, disabled when count box is empty -->
+                  <div class="col-xs-2">
+                      <button class="btn btn-secondary" id="submitButton" type="button" data-ng-disabled="" ng-click="newQuery()">Load</button>
+                  </div>
+                </div>
+              </span>
+              <!-- End Step One -->
+            </div>
+            <!-- End Form Group -->
+          </div>
+          <!-- End Form Inline -->
+
+          <div class="form-inline">
+            <div class="form-group">
+              <!-- Step Two -->
+              <span id="step2" ng-show="step2">
+                <h4>Step 2: Put Tweets in DB</h4>
+                <p>"Build DB" will build a database with all of your tweets.</p>
+              
+                <button class="btn btn-secondary" id="build" type="button" ng-click="buildDB()">Build DB</button>
+
+              </span>
+              <!-- End Step Two -->
+                
+              <!-- Step Three -->
+              <span id="step3" ng-show="step3">
+                <h4>Step 3: Pull Tweets in DB</h4>
+                <p>"Read DB" will display all of your tweets.</p>
+                  <button class="btn btn-secondary" id="read" type="button" ng-click="readDB()">Read DB</button>
+              </span>
+              <!-- End Step Three -->
+
+              <!-- Step Four -->
+              <div id="step4" ng-show="step4">
+                <h4>Step 4 (Optional): Export Tweets</h4>
+                <p>"Export" will be disabled until a file type is selected. Once you load your tweets, you can export the information to either a JSON, CSV or XML file.</p>
+                <p class="second">If you choose "XML" as your file type, the file name field becomes editable. Once you enter what you want to name the XML file, then press "Export." If you leave the name of the file empty, a default file name will be assigned.</p>
+                </ul>
+                  
+                <div class="col-xs-offset-2">
+                  <div class = "col-xs-3"> 
+                    <select class="form-control" data-ng-model="etype">
+                      <option value="" disabled selected>File Type</option>
+                      <option value="JSON">JSON</option>
+                      <option value="CSV">CSV</option>
+                      <option value="xml">XML</option>
+                    </select>
+                  </div>
+
+                  <div class="col-xs-3 ">
+                    <button class="btn btn-secondary" id="exportButton" type="button" data-ng-disabled="!etype" ng-click="exportInfo()">Export</button>
+                  </div>
+
+                  <div class="col-xs-3">
+                    <input type="text" class="form-control" data-ng-model="fName" id="name" placeholder="File Name" ng-disabled="etype != 'xml'">
+                  </div>
+
+                </div>
+              </div>
+              <!-- End Step Four -->
+            </div>
+            <!-- End Form Group -->
+          </div>
+          <!-- End Form Inline -->
+        </div>
+        <!--End Search Bar -->
+
+        <h2 id = "headerT" ng-show="t">Tweets</h2>
+
+        <!-- Tweet List -->
+        <div id = "tweetList">
+          <!-- Spinning Wheel Div -->
+          <img id="loading" style="display: none;" class="img-responsive" src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif" alt="Loading...">
+
+          <!-- Each Tweet Well -->
+          <div class="well" ng-repeat="t in tweets">
+            <!-- Profile Picture -->
+            <img style="float:left" class="img-circle" ng-src="{{t.user.profile_image_url}}" width="48px" height="48px">
+
+            <!-- Username -->
+            <div class="lead text-left">
+              <a ng-href="http://twitter.com/{{t.user.screen_name}}"> {{t.user.screen_name}} </a>
+            </div>
+
+            <!-- Date -->
+            <div class="text-right text-small text-muted"> {{(t.created_at).split('+')[0]}}</div>
+
+            <!-- Actual Tweet -->
+            <div class="text-primary">
+              <p>{{t.text}}</p>
+            </div>
+
+            <!-- Number of Retweets -->
+            <img class ="retweet" src="resources/img/retweet.png"> {{t.retweet_count}}
+
+            <!-- Number of Favorites -->
+            <img class = "favorite" src="resources/img/favorite.png"> {{t.favorite_count}}
+          </div>
+          <!-- End Each Tweet Well -->
+        </div>
+        <!-- End Tweet List -->
+      </div>
+      <!-- End Well Large -->
+  </div>
+  <!-- End Twitter App -->
+
+</div>
+<!-- End Controller -->
+
+<!-- Scripts at bottom of HTML to follow best usage practices -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="resources/JS/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="resources/JS/bootstrap.min.js"></script>
+<script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+<script src="node_modules/sweetalert/dist/sweetalert-dev.js"></script>
+
+</body>
+</html>

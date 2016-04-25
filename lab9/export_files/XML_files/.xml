@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_id>
+  <_bsontype>ObjectID</_bsontype>
+  <id>WÊæ5ÇC</id>
+</_id>
+<created_at>Mon Apr 25 02:24:09 +0000 2016</created_at>
+<id>724423722359230500</id>
+<id_str>724423722359230465</id_str>
+<text>RT @conserv_chicky: @hopingforachang @FoxNews @mychloegirl6124 @1776_Liberty_ @DaBearsk @JJGSO @PatrickSvitek also superpac for Trump</text>
+<source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+<truncated>false</truncated>
+in_reply_to_status_id
+in_reply_to_status_id_str
+in_reply_to_user_id
+in_reply_to_user_id_str
+in_reply_to_screen_name
+<user>
+  <id>1732121486</id>
+  <id_str>1732121486</id_str>
+  <name>#NeverTrump#NeverFox</name>
+  <screen_name>hopingforachang</screen_name>
+  <location>America</location>
+  url
+  <description>I am a proud conservative American. I am happy to engage with those willing to discuss ideas openly and honestly. Trolls with agendas: Proceed at your own risk.</description>
+  <protected>false</protected>
+  <verified>false</verified>
+  <followers_count>3114</followers_count>
+  <friends_count>1065</friends_count>
+  <listed_count>223</listed_count>
+  <favourites_count>138588</favourites_count>
+  <statuses_count>212953</statuses_count>
+  <created_at>Thu Sep 05 14:27:37 +0000 2013</created_at>
+  <utc_offset>-25200</utc_offset>
+  <time_zone>Arizona</time_zone>
+  <geo_enabled>true</geo_enabled>
+  <lang>en</lang>
+  <contributors_enabled>false</contributors_enabled>
+  <is_translator>false</is_translator>
+  <profile_background_color>131516</profile_background_color>
+  <profile_background_image_url>http://abs.twimg.com/images/themes/theme14/bg.gif</profile_background_image_url>
+  <profile_background_image_url_https>https://abs.twimg.com/images/themes/theme14/bg.gif</profile_background_image_url_https>
+  <profile_background_tile>true</profile_background_tile>
+  <profile_link_color>3B94D9</profile_link_color>
+  <profile_sidebar_border_color>000000</profile_sidebar_border_color>
+  <profile_sidebar_fill_color>000000</profile_sidebar_fill_color>
+  <profile_text_color>000000</profile_text_color>
+  <profile_use_background_image>false</profile_use_background_image>
+  <profile_image_url>http://pbs.twimg.com/profile_images/657965042277724160/IJLI1QZp_normal.jpg</profile_image_url>
+  <profile_image_url_https>https://pbs.twimg.com/profile_images/657965042277724160/IJLI1QZp_normal.jpg</profile_image_url_https>
+  <default_profile>false</default_profile>
+  <default_profile_image>false</default_profile_image>
+  following
+  follow_request_sent
+  notifications
+</user>
+geo
+coordinates
+place
+contributors
+<retweeted_status>
+  <created_at>Mon Apr 25 02:20:44 +0000 2016</created_at>
+  <id>724422862925226000</id>
+  <id_str>724422862925225984</id_str>
+  <text>@hopingforachang @FoxNews @mychloegirl6124 @1776_Liberty_ @DaBearsk @JJGSO @PatrickSvitek also superpac for Trump</text>
+  <source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id>724415207649497100</in_reply_to_status_id>
+  <in_reply_to_status_id_str>724415207649497089</in_reply_to_status_id_str>
+  <in_reply_to_user_id>1732121486</in_reply_to_user_id>
+  <in_reply_to_user_id_str>1732121486</in_reply_to_user_id_str>
+  <in_reply_to_screen_name>hopingforachang</in_reply_to_screen_name>
+  <user>
+    <id>242155297</id>
+    <id_str>242155297</id_str>
+    <name>RJane</name>
+    <screen_name>conserv_chicky</screen_name>
+    <location>Houston, Texas</location>
+    url
+    <description>Do what's right and damn the consequences. I choose Liberty.       #CruzCrew</description>
+    <protected>false</protected>
+    <verified>false</verified>
+    <followers_count>1666</followers_count>
+    <friends_count>1838</friends_count>
+    <listed_count>32</listed_count>
+    <favourites_count>8783</favourites_count>
+    <statuses_count>3774</statuses_count>
+    <created_at>Mon Jan 24 02:40:30 +0000 2011</created_at>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Central Time (US & Canada)</time_zone>
+    <geo_enabled>true</geo_enabled>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <is_translator>false</is_translator>
+    <profile_background_color>642D8B</profile_background_color>
+    <profile_background_image_url>http://abs.twimg.com/images/themes/theme10/bg.gif</profile_background_image_url>
+    <profile_background_image_url_https>https://abs.twimg.com/images/themes/theme10/bg.gif</profile_background_image_url_https>
+    <profile_background_tile>true</profile_background_tile>
+    <profile_link_color>FF0000</profile_link_color>
+    <profile_sidebar_border_color>65B0DA</profile_sidebar_border_color>
+    <profile_sidebar_fill_color>7AC3EE</profile_sidebar_fill_color>
+    <profile_text_color>3D1957</profile_text_color>
+    <profile_use_background_image>true</profile_use_background_image>
+    <profile_image_url>http://pbs.twimg.com/profile_images/714784818559631361/LsQls5kI_normal.jpg</profile_image_url>
+    <profile_image_url_https>https://pbs.twimg.com/profile_images/714784818559631361/LsQls5kI_normal.jpg</profile_image_url_https>
+    <profile_banner_url>https://pbs.twimg.com/profile_banners/242155297/1460676255</profile_banner_url>
+    <default_profile>false</default_profile>
+    <default_profile_image>false</default_profile_image>
+    following
+    follow_request_sent
+    notifications
+  </user>
+  geo
+  coordinates
+  place
+  contributors
+  <is_quote_status>false</is_quote_status>
+  <retweet_count>1</retweet_count>
+  <favorite_count>0</favorite_count>
+  <entities>
+    <hashtags>
+    </hashtags>
+    <urls>
+    </urls>
+    <user_mentions>
+      <screen_name>hopingforachang</screen_name>
+      <name>#NeverTrump#NeverFox</name>
+      <id>1732121486</id>
+      <id_str>1732121486</id_str>
+      <indices>
+        0
+        16
+      </indices>
+      <screen_name>FoxNews</screen_name>
+      <name>Fox News</name>
+      <id>1367531</id>
+      <id_str>1367531</id_str>
+      <indices>
+        17
+        25
+      </indices>
+      <screen_name>mychloegirl6124</screen_name>
+      <name>#onlycruz</name>
+      <id>4121502046</id>
+      <id_str>4121502046</id_str>
+      <indices>
+        26
+        42
+      </indices>
+      <screen_name>1776_Liberty_</screen_name>
+      <name>Da Juice</name>
+      <id>2649411710</id>
+      <id_str>2649411710</id_str>
+      <indices>
+        43
+        57
+      </indices>
+      <screen_name>DaBearsk</screen_name>
+      <name>#YesWeWill #Cruz2016</name>
+      <id>22903233</id>
+      <id_str>22903233</id_str>
+      <indices>
+        58
+        67
+      </indices>
+      <screen_name>JJGSO</screen_name>
+      <name>Facetious & Naive</name>
+      <id>2468413892</id>
+      <id_str>2468413892</id_str>
+      <indices>
+        68
+        74
+      </indices>
+      <screen_name>PatrickSvitek</screen_name>
+      <name>Patrick Svitek</name>
+      <id>280664117</id>
+      <id_str>280664117</id_str>
+      <indices>
+        75
+        89
+      </indices>
+    </user_mentions>
+    <symbols>
+    </symbols>
+  </entities>
+  <favorited>false</favorited>
+  <retweeted>false</retweeted>
+  <filter_level>low</filter_level>
+  <lang>en</lang>
+</retweeted_status>
+<is_quote_status>false</is_quote_status>
+<retweet_count>0</retweet_count>
+<favorite_count>0</favorite_count>
+<entities>
+  <hashtags>
+  </hashtags>
+  <urls>
+  </urls>
+  <user_mentions>
+    <screen_name>conserv_chicky</screen_name>
+    <name>RJane</name>
+    <id>242155297</id>
+    <id_str>242155297</id_str>
+    <indices>
+      3
+      18
+    </indices>
+    <screen_name>hopingforachang</screen_name>
+    <name>#NeverTrump#NeverFox</name>
+    <id>1732121486</id>
+    <id_str>1732121486</id_str>
+    <indices>
+      20
+      36
+    </indices>
+    <screen_name>FoxNews</screen_name>
+    <name>Fox News</name>
+    <id>1367531</id>
+    <id_str>1367531</id_str>
+    <indices>
+      37
+      45
+    </indices>
+    <screen_name>mychloegirl6124</screen_name>
+    <name>#onlycruz</name>
+    <id>4121502046</id>
+    <id_str>4121502046</id_str>
+    <indices>
+      46
+      62
+    </indices>
+    <screen_name>1776_Liberty_</screen_name>
+    <name>Da Juice</name>
+    <id>2649411710</id>
+    <id_str>2649411710</id_str>
+    <indices>
+      63
+      77
+    </indices>
+    <screen_name>DaBearsk</screen_name>
+    <name>#YesWeWill #Cruz2016</name>
+    <id>22903233</id>
+    <id_str>22903233</id_str>
+    <indices>
+      78
+      87
+    </indices>
+    <screen_name>JJGSO</screen_name>
+    <name>Facetious & Naive</name>
+    <id>2468413892</id>
+    <id_str>2468413892</id_str>
+    <indices>
+      88
+      94
+    </indices>
+    <screen_name>PatrickSvitek</screen_name>
+    <name>Patrick Svitek</name>
+    <id>280664117</id>
+    <id_str>280664117</id_str>
+    <indices>
+      95
+      109
+    </indices>
+  </user_mentions>
+  <symbols>
+  </symbols>
+</entities>
+<favorited>false</favorited>
+<retweeted>false</retweeted>
+<filter_level>low</filter_level>
+<lang>en</lang>
+<timestamp_ms>1461551049209</timestamp_ms>
+<_id>
+  <_bsontype>ObjectID</_bsontype>
+  <id>WÊæ5ÇC</id>
+</_id>
+<created_at>Mon Apr 25 02:24:09 +0000 2016</created_at>
+<id>724423722921140200</id>
+<id_str>724423722921140225</id_str>
+<text>RT @RogerJStoneJr: You know how u know that @tedcruz is done? Major vendors for his current campaign contact me about Trump general electio…</text>
+<source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+<truncated>false</truncated>
+in_reply_to_status_id
+in_reply_to_status_id_str
+in_reply_to_user_id
+in_reply_to_user_id_str
+in_reply_to_screen_name
+<user>
+  <id>3313075368</id>
+  <id_str>3313075368</id_str>
+  <name>Peqqueno</name>
+  <screen_name>Peqqueno</screen_name>
+  location
+  <url>http://instagram.com/trumpwns</url>
+  <description>The answer to 1984 is 1776.</description>
+  <protected>false</protected>
+  <verified>false</verified>
+  <followers_count>105</followers_count>
+  <friends_count>10</friends_count>
+  <listed_count>19</listed_count>
+  <favourites_count>3066</favourites_count>
+  <statuses_count>4623</statuses_count>
+  <created_at>Wed Aug 12 07:10:34 +0000 2015</created_at>
+  <utc_offset>-18000</utc_offset>
+  <time_zone>Central Time (US & Canada)</time_zone>
+  <geo_enabled>false</geo_enabled>
+  <lang>en</lang>
+  <contributors_enabled>false</contributors_enabled>
+  <is_translator>false</is_translator>
+  <profile_background_color>C0DEED</profile_background_color>
+  <profile_background_image_url>http://abs.twimg.com/images/themes/theme1/bg.png</profile_background_image_url>
+  <profile_background_image_url_https>https://abs.twimg.com/images/themes/theme1/bg.png</profile_background_image_url_https>
+  <profile_background_tile>false</profile_background_tile>
+  <profile_link_color>0084B4</profile_link_color>
+  <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+  <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+  <profile_text_color>333333</profile_text_color>
+  <profile_use_background_image>true</profile_use_background_image>
+  <profile_image_url>http://pbs.twimg.com/profile_images/723896077695352833/eqxAM2DV_normal.jpg</profile_image_url>
+  <profile_image_url_https>https://pbs.twimg.com/profile_images/723896077695352833/eqxAM2DV_normal.jpg</profile_image_url_https>
+  <profile_banner_url>https://pbs.twimg.com/profile_banners/3313075368/1461425334</profile_banner_url>
+  <default_profile>true</default_profile>
+  <default_profile_image>false</default_profile_image>
+  following
+  follow_request_sent
+  notifications
+</user>
+geo
+coordinates
+place
+contributors
+<retweeted_status>
+  <created_at>Mon Apr 25 01:38:56 +0000 2016</created_at>
+  <id>724412346047828000</id>
+  <id_str>724412346047827968</id_str>
+  <text>You know how u know that @tedcruz is done? Major vendors for his current campaign contact me about Trump general election work.</text>
+  <source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+  <truncated>false</truncated>
+  in_reply_to_status_id
+  in_reply_to_status_id_str
+  in_reply_to_user_id
+  in_reply_to_user_id_str
+  in_reply_to_screen_name
+  <user>
+    <id>47253057</id>
+    <id_str>47253057</id_str>
+    <name>Roger Stone</name>
+    <screen_name>RogerJStoneJr</screen_name>
+    <location>New York City</location>
+    <url>http://RogerStone.com</url>
+    <description>Host of @StoneColdTruth, http://StoneZONE.com, New York Times Bestselling Author of @ClintonsWar and @BushCrimes, rabble rouser, Libertarian conservative.</description>
+    <protected>false</protected>
+    <verified>false</verified>
+    <followers_count>51140</followers_count>
+    <friends_count>4146</friends_count>
+    <listed_count>835</listed_count>
+    <favourites_count>2380</favourites_count>
+    <statuses_count>25604</statuses_count>
+    <created_at>Mon Jun 15 03:51:50 +0000 2009</created_at>
+    <utc_offset>-14400</utc_offset>
+    <time_zone>Eastern Time (US & Canada)</time_zone>
+    <geo_enabled>true</geo_enabled>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <is_translator>false</is_translator>
+    <profile_background_color>1A1B1F</profile_background_color>
+    <profile_background_image_url>http://pbs.twimg.com/profile_background_images/380832861/rs_ad4.gif</profile_background_image_url>
+    <profile_background_image_url_https>https://pbs.twimg.com/profile_background_images/380832861/rs_ad4.gif</profile_background_image_url_https>
+    <profile_background_tile>true</profile_background_tile>
+    <profile_link_color>2FC2EF</profile_link_color>
+    <profile_sidebar_border_color>181A1E</profile_sidebar_border_color>
+    <profile_sidebar_fill_color>252429</profile_sidebar_fill_color>
+    <profile_text_color>666666</profile_text_color>
+    <profile_use_background_image>true</profile_use_background_image>
+    <profile_image_url>http://pbs.twimg.com/profile_images/705935222899134464/e9amMM5D_normal.jpg</profile_image_url>
+    <profile_image_url_https>https://pbs.twimg.com/profile_images/705935222899134464/e9amMM5D_normal.jpg</profile_image_url_https>
+    <profile_banner_url>https://pbs.twimg.com/profile_banners/47253057/1457375315</profile_banner_url>
+    <default_profile>false</default_profile>
+    <default_profile_image>false</default_profile_image>
+    following
+    follow_request_sent
+    notifications
+  </user>
+  geo
+  coordinates
+  place
+  contributors
+  <is_quote_status>false</is_quote_status>
+  <retweet_count>288</retweet_count>
+  <favorite_count>391</favorite_count>
+  <entities>
+    <hashtags>
+    </hashtags>
+    <urls>
+    </urls>
+    <user_mentions>
+      <screen_name>tedcruz</screen_name>
+      <name>Ted Cruz</name>
+      <id>23022687</id>
+      <id_str>23022687</id_str>
+      <indices>
+        25
+        33
+      </indices>
+    </user_mentions>
+    <symbols>
+    </symbols>
+  </entities>
+  <favorited>false</favorited>
+  <retweeted>false</retweeted>
+  <filter_level>low</filter_level>
+  <lang>en</lang>
+</retweeted_status>
+<is_quote_status>false</is_quote_status>
+<retweet_count>0</retweet_count>
+<favorite_count>0</favorite_count>
+<entities>
+  <hashtags>
+  </hashtags>
+  <urls>
+  </urls>
+  <user_mentions>
+    <screen_name>RogerJStoneJr</screen_name>
+    <name>Roger Stone</name>
+    <id>47253057</id>
+    <id_str>47253057</id_str>
+    <indices>
+      3
+      17
+    </indices>
+    <screen_name>tedcruz</screen_name>
+    <name>Ted Cruz</name>
+    <id>23022687</id>
+    <id_str>23022687</id_str>
+    <indices>
+      44
+      52
+    </indices>
+  </user_mentions>
+  <symbols>
+  </symbols>
+</entities>
+<favorited>false</favorited>
+<retweeted>false</retweeted>
+<filter_level>low</filter_level>
+<lang>en</lang>
+<timestamp_ms>1461551049343</timestamp_ms>
+<_id>
+  <_bsontype>ObjectID</_bsontype>
+  <id>WÊæ5ÇC</id>
+</_id>
+<created_at>Mon Apr 25 02:24:09 +0000 2016</created_at>
+<id>724423723856498700</id>
+<id_str>724423723856498688</id_str>
+<text>RT @motalicious: Chakas en el Zócalo.
+Chairos en el Vive.
+Feminazis en el Monumento a la Revolución.
+
+A ellos se refiere Donald Trump.</text>
+<source><a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a></source>
+<truncated>false</truncated>
+in_reply_to_status_id
+in_reply_to_status_id_str
+in_reply_to_user_id
+in_reply_to_user_id_str
+in_reply_to_screen_name
+<user>
+  <id>13959082</id>
+  <id_str>13959082</id_str>
+  <name>Alexhuama</name>
+  <screen_name>Alexhuama</screen_name>
+  location
+  url
+  description
+  <protected>false</protected>
+  <verified>false</verified>
+  <followers_count>130</followers_count>
+  <friends_count>432</friends_count>
+  <listed_count>0</listed_count>
+  <favourites_count>497</favourites_count>
+  <statuses_count>4940</statuses_count>
+  <created_at>Mon Feb 25 20:00:17 +0000 2008</created_at>
+  <utc_offset>-18000</utc_offset>
+  <time_zone>Mexico City</time_zone>
+  <geo_enabled>false</geo_enabled>
+  <lang>en</lang>
+  <contributors_enabled>false</contributors_enabled>
+  <is_translator>false</is_translator>
+  <profile_background_color>9AE4E8</profile_background_color>
+  <profile_background_image_url>http://pbs.twimg.com/profile_background_images/4299262/CASTLEVANIA_figuras.jpg</profile_background_image_url>
+  <profile_background_image_url_https>https://pbs.twimg.com/profile_background_images/4299262/CASTLEVANIA_figuras.jpg</profile_background_image_url_https>
+  <profile_background_tile>true</profile_background_tile>
+  <profile_link_color>0084B4</profile_link_color>
+  <profile_sidebar_border_color>BDDCAD</profile_sidebar_border_color>
+  <profile_sidebar_fill_color>DDFFCC</profile_sidebar_fill_color>
+  <profile_text_color>333333</profile_text_color>
+  <profile_use_background_image>true</profile_use_background_image>
+  <profile_image_url>http://pbs.twimg.com/profile_images/1093934702/avatar15675_6_normal.gif</profile_image_url>
+  <profile_image_url_https>https://pbs.twimg.com/profile_images/1093934702/avatar15675_6_normal.gif</profile_image_url_https>
+  <default_profile>false</default_profile>
+  <default_profile_image>false</default_profile_image>
+  following
+  follow_request_sent
+  notifications
+</user>
+geo
+coordinates
+place
+contributors
+<retweeted_status>
+  <created_at>Sun Apr 24 23:38:35 +0000 2016</created_at>
+  <id>724382056373874700</id>
+  <id_str>724382056373874688</id_str>
+  <text>Chakas en el Zócalo.
+Chairos en el Vive.
+Feminazis en el Monumento a la Revolución.
+
+A ellos se refiere Donald Trump.</text>
+  <source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+  <truncated>false</truncated>
+  in_reply_to_status_id
+  in_reply_to_status_id_str
+  in_reply_to_user_id
+  in_reply_to_user_id_str
+  in_reply_to_screen_name
+  <user>
+    <id>40197446</id>
+    <id_str>40197446</id_str>
+    <name>Mon Robespierre</name>
+    <screen_name>motalicious</screen_name>
+    location
+    <url>http://Instagram.com/motalicious</url>
+    <description>No bostezo, me estoy sorprendiendo en slow motion. Pa k kieres saber eso jaja. Nunca pude dejar el perico.</description>
+    <protected>false</protected>
+    <verified>false</verified>
+    <followers_count>13327</followers_count>
+    <friends_count>844</friends_count>
+    <listed_count>456</listed_count>
+    <favourites_count>41887</favourites_count>
+    <statuses_count>53998</statuses_count>
+    <created_at>Fri May 15 07:35:25 +0000 2009</created_at>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Mexico City</time_zone>
+    <geo_enabled>false</geo_enabled>
+    <lang>en</lang>
+    <contributors_enabled>false</contributors_enabled>
+    <is_translator>false</is_translator>
+    <profile_background_color>DBE9ED</profile_background_color>
+    <profile_background_image_url>http://pbs.twimg.com/profile_background_images/645639077/o4obs4gta8fz3z6a329p.jpeg</profile_background_image_url>
+    <profile_background_image_url_https>https://pbs.twimg.com/profile_background_images/645639077/o4obs4gta8fz3z6a329p.jpeg</profile_background_image_url_https>
+    <profile_background_tile>true</profile_background_tile>
+    <profile_link_color>33C2CC</profile_link_color>
+    <profile_sidebar_border_color>FFFFFF</profile_sidebar_border_color>
+    <profile_sidebar_fill_color>E6F6F9</profile_sidebar_fill_color>
+    <profile_text_color>333333</profile_text_color>
+    <profile_use_background_image>true</profile_use_background_image>
+    <profile_image_url>http://pbs.twimg.com/profile_images/422200160928555008/AVO74NRr_normal.jpeg</profile_image_url>
+    <profile_image_url_https>https://pbs.twimg.com/profile_images/422200160928555008/AVO74NRr_normal.jpeg</profile_image_url_https>
+    <profile_banner_url>https://pbs.twimg.com/profile_banners/40197446/1457908593</profile_banner_url>
+    <default_profile>false</default_profile>
+    <default_profile_image>false</default_profile_image>
+    following
+    follow_request_sent
+    notifications
+  </user>
+  geo
+  coordinates
+  place
+  contributors
+  <is_quote_status>false</is_quote_status>
+  <retweet_count>8</retweet_count>
+  <favorite_count>33</favorite_count>
+  <entities>
+    <hashtags>
+    </hashtags>
+    <urls>
+    </urls>
+    <user_mentions>
+    </user_mentions>
+    <symbols>
+    </symbols>
+  </entities>
+  <favorited>false</favorited>
+  <retweeted>false</retweeted>
+  <filter_level>low</filter_level>
+  <lang>es</lang>
+</retweeted_status>
+<is_quote_status>false</is_quote_status>
+<retweet_count>0</retweet_count>
+<favorite_count>0</favorite_count>
+<entities>
+  <hashtags>
+  </hashtags>
+  <urls>
+  </urls>
+  <user_mentions>
+    <screen_name>motalicious</screen_name>
+    <name>Mon Robespierre</name>
+    <id>40197446</id>
+    <id_str>40197446</id_str>
+    <indices>
+      3
+      15
+    </indices>
+  </user_mentions>
+  <symbols>
+  </symbols>
+</entities>
+<favorited>false</favorited>
+<retweeted>false</retweeted>
+<filter_level>low</filter_level>
+<lang>es</lang>
+<timestamp_ms>1461551049566</timestamp_ms>
