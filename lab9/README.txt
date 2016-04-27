@@ -13,6 +13,7 @@ Before this lab the user had to restart the server in order to do multiple searc
 
 A big change I added to my site was the look of alerts. I thought the plain alert message was not very flattering so I looked into other alert messages. SweetAlert, a node module, allows you to have a few different types of alert messages. I decided to just stick with their alert for success messages for simplicity. Using SweetAlert was very easy and was just a simple line of code to use. 
 
+In order to obtain more tweets, the user must refresh the page. When refreshing the page, the entire application is restarted.
 
 Resources:
 
