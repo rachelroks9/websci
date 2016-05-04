@@ -19,3 +19,5 @@ Lab 7: Node.JS, MongoDB and Tweets
 Lab 8: Node.JS, SPARQL and RDF
 
 Lab 9: Putting it All Together
+
+Lab 10: Twitter Visualizations
