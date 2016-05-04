@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_id>
+  <_bsontype>ObjectID</_bsontype>
+  <id>WÓ+&¶ÉÛ!&</id>
+</_id>
+<created_at>Tue Apr 26 02:31:54 +0000 2016</created_at>
+<id>724788061331152900</id>
+<id_str>724788061331152896</id_str>
+<text>I'm becoming addicted to one tree hill</text>
+<source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+<truncated>false</truncated>
+in_reply_to_status_id
+in_reply_to_status_id_str
+in_reply_to_user_id
+in_reply_to_user_id_str
+in_reply_to_screen_name
+<user>
+  <id>2235463010</id>
+  <id_str>2235463010</id_str>
+  <name>Jnork</name>
+  <screen_name>jessnorkus</screen_name>
+  <location>New York</location>
+  <url>http://onedirectionmusic.com</url>
+  description
+  <protected>false</protected>
+  <verified>false</verified>
+  <followers_count>245</followers_count>
+  <friends_count>634</friends_count>
+  <listed_count>1</listed_count>
+  <favourites_count>6354</favourites_count>
+  <statuses_count>2460</statuses_count>
+  <created_at>Sun Dec 08 04:14:45 +0000 2013</created_at>
+  utc_offset
+  time_zone
+  <geo_enabled>true</geo_enabled>
+  <lang>en</lang>
+  <contributors_enabled>false</contributors_enabled>
+  <is_translator>false</is_translator>
+  <profile_background_color>C0DEED</profile_background_color>
+  <profile_background_image_url>http://abs.twimg.com/images/themes/theme1/bg.png</profile_background_image_url>
+  <profile_background_image_url_https>https://abs.twimg.com/images/themes/theme1/bg.png</profile_background_image_url_https>
+  <profile_background_tile>false</profile_background_tile>
+  <profile_link_color>0084B4</profile_link_color>
+  <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+  <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+  <profile_text_color>333333</profile_text_color>
+  <profile_use_background_image>true</profile_use_background_image>
+  <profile_image_url>http://pbs.twimg.com/profile_images/721532087589867520/g9B6mhr__normal.jpg</profile_image_url>
+  <profile_image_url_https>https://pbs.twimg.com/profile_images/721532087589867520/g9B6mhr__normal.jpg</profile_image_url_https>
+  <profile_banner_url>https://pbs.twimg.com/profile_banners/2235463010/1458861300</profile_banner_url>
+  <default_profile>true</default_profile>
+  <default_profile_image>false</default_profile_image>
+  following
+  follow_request_sent
+  notifications
+</user>
+geo
+coordinates
+<place>
+  <id>94965b2c45386f87</id>
+  <url>https://api.twitter.com/1.1/geo/id/94965b2c45386f87.json</url>
+  <place_type>admin</place_type>
+  <name>New York</name>
+  <full_name>New York, USA</full_name>
+  <country_code>US</country_code>
+  <country>United States</country>
+  <bounding_box>
+    <type>Polygon</type>
+    <coordinates>
+      -79.76259
+      40.477383
+      -79.76259
+      45.015851
+      -71.777492
+      45.015851
+      -71.777492
+      40.477383
+    </coordinates>
+  </bounding_box>
+  <attributes>
+  </attributes>
+</place>
+contributors
+<is_quote_status>false</is_quote_status>
+<retweet_count>0</retweet_count>
+<favorite_count>0</favorite_count>
+<entities>
+  <hashtags>
+  </hashtags>
+  <urls>
+  </urls>
+  <user_mentions>
+  </user_mentions>
+  <symbols>
+  </symbols>
+</entities>
+<favorited>false</favorited>
+<retweeted>false</retweeted>
+<filter_level>low</filter_level>
+<lang>en</lang>
+<timestamp_ms>1461637914389</timestamp_ms>
+<_id>
+  <_bsontype>ObjectID</_bsontype>
+  <id>WÓ+&¶ÉÛ!'</id>
+</_id>
+<created_at>Tue Apr 26 02:31:54 +0000 2016</created_at>
+<id>724788061868052500</id>
+<id_str>724788061868052481</id_str>
+<text>Sandow is saved!! #Raw</text>
+<source><a href="http://twitter.com" rel="nofollow">Twitter Web Client</a></source>
+<truncated>false</truncated>
+in_reply_to_status_id
+in_reply_to_status_id_str
+in_reply_to_user_id
+in_reply_to_user_id_str
+in_reply_to_screen_name
+<user>
+  <id>130963677</id>
+  <id_str>130963677</id_str>
+  <name>Beardman 1991</name>
+  <screen_name>LegendoLegends</screen_name>
+  <location>Dimension X</location>
+  url
+  <description>Anime fan. Hummus enthusiast. Wrestling nut. Bills Fan. Lovable Asshole. Single. 3DS Friend Code 5086-5216-9648</description>
+  <protected>false</protected>
+  <verified>false</verified>
+  <followers_count>849</followers_count>
+  <friends_count>1941</friends_count>
+  <listed_count>21</listed_count>
+  <favourites_count>1168</favourites_count>
+  <statuses_count>68542</statuses_count>
+  <created_at>Thu Apr 08 21:43:16 +0000 2010</created_at>
+  <utc_offset>-14400</utc_offset>
+  <time_zone>Eastern Time (US & Canada)</time_zone>
+  <geo_enabled>true</geo_enabled>
+  <lang>en</lang>
+  <contributors_enabled>false</contributors_enabled>
+  <is_translator>false</is_translator>
+  <profile_background_color>022330</profile_background_color>
+  <profile_background_image_url>http://abs.twimg.com/images/themes/theme14/bg.gif</profile_background_image_url>
+  <profile_background_image_url_https>https://abs.twimg.com/images/themes/theme14/bg.gif</profile_background_image_url_https>
+  <profile_background_tile>true</profile_background_tile>
+  <profile_link_color>3B94D9</profile_link_color>
+  <profile_sidebar_border_color>FFFFFF</profile_sidebar_border_color>
+  <profile_sidebar_fill_color>EFEFEF</profile_sidebar_fill_color>
+  <profile_text_color>333333</profile_text_color>
+  <profile_use_background_image>false</profile_use_background_image>
+  <profile_image_url>http://pbs.twimg.com/profile_images/517793104884019200/_4nXrOcP_normal.jpeg</profile_image_url>
+  <profile_image_url_https>https://pbs.twimg.com/profile_images/517793104884019200/_4nXrOcP_normal.jpeg</profile_image_url_https>
+  <profile_banner_url>https://pbs.twimg.com/profile_banners/130963677/1422417257</profile_banner_url>
+  <default_profile>false</default_profile>
+  <default_profile_image>false</default_profile_image>
+  following
+  follow_request_sent
+  notifications
+</user>
+geo
+coordinates
+<place>
+  <id>94965b2c45386f87</id>
+  <url>https://api.twitter.com/1.1/geo/id/94965b2c45386f87.json</url>
+  <place_type>admin</place_type>
+  <name>New York</name>
+  <full_name>New York, USA</full_name>
+  <country_code>US</country_code>
+  <country>United States</country>
+  <bounding_box>
+    <type>Polygon</type>
+    <coordinates>
+      -79.76259
+      40.477383
+      -79.76259
+      45.015851
+      -71.777492
+      45.015851
+      -71.777492
+      40.477383
+    </coordinates>
+  </bounding_box>
+  <attributes>
+  </attributes>
+</place>
+contributors
+<is_quote_status>false</is_quote_status>
+<retweet_count>0</retweet_count>
+<favorite_count>0</favorite_count>
+<entities>
+  <hashtags>
+    <text>Raw</text>
+    <indices>
+      18
+      22
+    </indices>
+  </hashtags>
+  <urls>
+  </urls>
+  <user_mentions>
+  </user_mentions>
+  <symbols>
+  </symbols>
+</entities>
+<favorited>false</favorited>
+<retweeted>false</retweeted>
+<filter_level>low</filter_level>
+<lang>en</lang>
+<timestamp_ms>1461637914517</timestamp_ms>
+<_id>
+  <_bsontype>ObjectID</_bsontype>
+  <id>WÓ+&¶ÉÛ!(</id>
+</_id>
+<created_at>Tue Apr 26 02:31:55 +0000 2016</created_at>
+<id>724788064799825900</id>
+<id_str>724788064799825921</id_str>
+<text>Hey Rach</text>
+<source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+<truncated>false</truncated>
+in_reply_to_status_id
+in_reply_to_status_id_str
+in_reply_to_user_id
+in_reply_to_user_id_str
+in_reply_to_screen_name
+<user>
+  <id>561311013</id>
+  <id_str>561311013</id_str>
+  <name>Melanie Psota</name>
+  <screen_name>mpsota415</screen_name>
+  location
+  url
+  <description>chin up kid, they'd kill to see you fall RPI '18 ΑΦ</description>
+  <protected>false</protected>
+  <verified>false</verified>
+  <followers_count>268</followers_count>
+  <friends_count>246</friends_count>
+  <listed_count>1</listed_count>
+  <favourites_count>5783</favourites_count>
+  <statuses_count>4025</statuses_count>
+  <created_at>Mon Apr 23 15:31:16 +0000 2012</created_at>
+  <utc_offset>-10800</utc_offset>
+  <time_zone>Atlantic Time (Canada)</time_zone>
+  <geo_enabled>true</geo_enabled>
+  <lang>en</lang>
+  <contributors_enabled>false</contributors_enabled>
+  <is_translator>false</is_translator>
+  <profile_background_color>DBE9ED</profile_background_color>
+  <profile_background_image_url>http://abs.twimg.com/images/themes/theme17/bg.gif</profile_background_image_url>
+  <profile_background_image_url_https>https://abs.twimg.com/images/themes/theme17/bg.gif</profile_background_image_url_https>
+  <profile_background_tile>false</profile_background_tile>
+  <profile_link_color>CC3366</profile_link_color>
+  <profile_sidebar_border_color>DBE9ED</profile_sidebar_border_color>
+  <profile_sidebar_fill_color>E6F6F9</profile_sidebar_fill_color>
+  <profile_text_color>333333</profile_text_color>
+  <profile_use_background_image>true</profile_use_background_image>
+  <profile_image_url>http://pbs.twimg.com/profile_images/616406876612333568/VpV1kHhe_normal.jpg</profile_image_url>
+  <profile_image_url_https>https://pbs.twimg.com/profile_images/616406876612333568/VpV1kHhe_normal.jpg</profile_image_url_https>
+  <profile_banner_url>https://pbs.twimg.com/profile_banners/561311013/1449599889</profile_banner_url>
+  <default_profile>false</default_profile>
+  <default_profile_image>false</default_profile_image>
+  following
+  follow_request_sent
+  notifications
+</user>
+geo
+coordinates
+<place>
+  <id>51cc4a7155935af2</id>
+  <url>https://api.twitter.com/1.1/geo/id/51cc4a7155935af2.json</url>
+  <place_type>city</place_type>
+  <name>Troy</name>
+  <full_name>Troy, NY</full_name>
+  <country_code>US</country_code>
+  <country>United States</country>
+  <bounding_box>
+    <type>Polygon</type>
+    <coordinates>
+      -73.724998
+      42.660879
+      -73.724998
+      42.795001
+      -73.649201
+      42.795001
+      -73.649201
+      42.660879
+    </coordinates>
+  </bounding_box>
+  <attributes>
+  </attributes>
+</place>
+contributors
+<is_quote_status>false</is_quote_status>
+<retweet_count>0</retweet_count>
+<favorite_count>0</favorite_count>
+<entities>
+  <hashtags>
+  </hashtags>
+  <urls>
+  </urls>
+  <user_mentions>
+  </user_mentions>
+  <symbols>
+  </symbols>
+</entities>
+<favorited>false</favorited>
+<retweeted>false</retweeted>
+<filter_level>low</filter_level>
+<lang>en</lang>
+<timestamp_ms>1461637915216</timestamp_ms>
+<_id>
+  <_bsontype>ObjectID</_bsontype>
+  <id>WÓ+&¶ÉÛ!)</id>
+</_id>
+<created_at>Tue Apr 26 02:31:56 +0000 2016</created_at>
+<id>724788068771893200</id>
+<id_str>724788068771893248</id_str>
+<text>Thank you @TheMakeupShow @JVincentmakeup @TEMPTUPRO @TEMPTU so excited to be picked 😘💜💋 https://t.co/EZHtGxNv2a</text>
+<source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+<truncated>false</truncated>
+in_reply_to_status_id
+in_reply_to_status_id_str
+in_reply_to_user_id
+in_reply_to_user_id_str
+in_reply_to_screen_name
+<user>
+  <id>32218670</id>
+  <id_str>32218670</id_str>
+  <name>Jennifer McCarthy</name>
+  <screen_name>TrueGraceMakeUp</screen_name>
+  <location>New York</location>
+  url
+  <description>Makeup Artist</description>
+  <protected>false</protected>
+  <verified>false</verified>
+  <followers_count>358</followers_count>
+  <friends_count>1116</friends_count>
+  <listed_count>7</listed_count>
+  <favourites_count>357</favourites_count>
+  <statuses_count>459</statuses_count>
+  <created_at>Fri Apr 17 00:19:03 +0000 2009</created_at>
+  <utc_offset>-10800</utc_offset>
+  <time_zone>Atlantic Time (Canada)</time_zone>
+  <geo_enabled>true</geo_enabled>
+  <lang>en</lang>
+  <contributors_enabled>false</contributors_enabled>
+  <is_translator>false</is_translator>
+  <profile_background_color>C0DEED</profile_background_color>
+  <profile_background_image_url>http://abs.twimg.com/images/themes/theme1/bg.png</profile_background_image_url>
+  <profile_background_image_url_https>https://abs.twimg.com/images/themes/theme1/bg.png</profile_background_image_url_https>
+  <profile_background_tile>false</profile_background_tile>
+  <profile_link_color>0084B4</profile_link_color>
+  <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+  <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+  <profile_text_color>333333</profile_text_color>
+  <profile_use_background_image>true</profile_use_background_image>
+  <profile_image_url>http://pbs.twimg.com/profile_images/462303302190112769/HCNtfw9d_normal.jpeg</profile_image_url>
+  <profile_image_url_https>https://pbs.twimg.com/profile_images/462303302190112769/HCNtfw9d_normal.jpeg</profile_image_url_https>
+  <profile_banner_url>https://pbs.twimg.com/profile_banners/32218670/1418967044</profile_banner_url>
+  <default_profile>true</default_profile>
+  <default_profile_image>false</default_profile_image>
+  following
+  follow_request_sent
+  notifications
+</user>
+geo
+coordinates
+<place>
+  <id>94965b2c45386f87</id>
+  <url>https://api.twitter.com/1.1/geo/id/94965b2c45386f87.json</url>
+  <place_type>admin</place_type>
+  <name>New York</name>
+  <full_name>New York, USA</full_name>
+  <country_code>US</country_code>
+  <country>United States</country>
+  <bounding_box>
+    <type>Polygon</type>
+    <coordinates>
+      -79.76259
+      40.477383
+      -79.76259
+      45.015851
+      -71.777492
+      45.015851
+      -71.777492
+      40.477383
+    </coordinates>
+  </bounding_box>
+  <attributes>
+  </attributes>
+</place>
+contributors
+<is_quote_status>false</is_quote_status>
+<retweet_count>0</retweet_count>
+<favorite_count>0</favorite_count>
+<entities>
+  <hashtags>
+  </hashtags>
+  <urls>
+  </urls>
+  <user_mentions>
+    <screen_name>TheMakeupShow</screen_name>
+    <name>TheMakeupShow</name>
+    <id>19914747</id>
+    <id_str>19914747</id_str>
+    <indices>
+      10
+      24
+    </indices>
+    <screen_name>JVincentmakeup</screen_name>
+    <name>James Vincent</name>
+    <id>79619221</id>
+    <id_str>79619221</id_str>
+    <indices>
+      25
+      40
+    </indices>
+    <screen_name>TEMPTUPRO</screen_name>
+    <name>TEMPTU PRO</name>
+    <id>26102521</id>
+    <id_str>26102521</id_str>
+    <indices>
+      41
+      51
+    </indices>
+    <screen_name>TEMPTU</screen_name>
+    <name>T E M P T U</name>
+    <id>17750806</id>
+    <id_str>17750806</id_str>
+    <indices>
+      52
+      59
+    </indices>
+  </user_mentions>
+  <symbols>
+  </symbols>
+  <media>
+    <id>724788064036511700</id>
+    <id_str>724788064036511744</id_str>
+    <indices>
+      88
+      111
+    </indices>
+    <media_url>http://pbs.twimg.com/media/Cg7253ZW4AAPCDE.jpg</media_url>
+    <media_url_https>https://pbs.twimg.com/media/Cg7253ZW4AAPCDE.jpg</media_url_https>
+    <url>https://t.co/EZHtGxNv2a</url>
+    <display_url>pic.twitter.com/EZHtGxNv2a</display_url>
+    <expanded_url>http://twitter.com/TrueGraceMakeUp/status/724788068771893248/photo/1</expanded_url>
+    <type>photo</type>
+    <sizes>
+      <large>
+        <w>577</w>
+        <h>1024</h>
+        <resize>fit</resize>
+      </large>
+      <thumb>
+        <w>150</w>
+        <h>150</h>
+        <resize>crop</resize>
+      </thumb>
+      <small>
+        <w>340</w>
+        <h>603</h>
+        <resize>fit</resize>
+      </small>
+      <medium>
+        <w>577</w>
+        <h>1024</h>
+        <resize>fit</resize>
+      </medium>
+    </sizes>
+  </media>
+</entities>
+<extended_entities>
+  <media>
+    <id>724788064036511700</id>
+    <id_str>724788064036511744</id_str>
+    <indices>
+      88
+      111
+    </indices>
+    <media_url>http://pbs.twimg.com/media/Cg7253ZW4AAPCDE.jpg</media_url>
+    <media_url_https>https://pbs.twimg.com/media/Cg7253ZW4AAPCDE.jpg</media_url_https>
+    <url>https://t.co/EZHtGxNv2a</url>
+    <display_url>pic.twitter.com/EZHtGxNv2a</display_url>
+    <expanded_url>http://twitter.com/TrueGraceMakeUp/status/724788068771893248/photo/1</expanded_url>
+    <type>photo</type>
+    <sizes>
+      <large>
+        <w>577</w>
+        <h>1024</h>
+        <resize>fit</resize>
+      </large>
+      <thumb>
+        <w>150</w>
+        <h>150</h>
+        <resize>crop</resize>
+      </thumb>
+      <small>
+        <w>340</w>
+        <h>603</h>
+        <resize>fit</resize>
+      </small>
+      <medium>
+        <w>577</w>
+        <h>1024</h>
+        <resize>fit</resize>
+      </medium>
+    </sizes>
+  </media>
+</extended_entities>
+<favorited>false</favorited>
+<retweeted>false</retweeted>
+<possibly_sensitive>false</possibly_sensitive>
+<filter_level>low</filter_level>
+<lang>en</lang>
+<timestamp_ms>1461637916163</timestamp_ms>
+<_id>
+  <_bsontype>ObjectID</_bsontype>
+  <id>WÓ+&¶ÉÛ!*</id>
+</_id>
+<created_at>Tue Apr 26 02:31:59 +0000 2016</created_at>
+<id>724788081652584400</id>
+<id_str>724788081652584448</id_str>
+<text>@BabyAnimalPics @SophiaFrontale</text>
+<source><a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></source>
+<truncated>false</truncated>
+<in_reply_to_status_id>724312489907855400</in_reply_to_status_id>
+<in_reply_to_status_id_str>724312489907855367</in_reply_to_status_id_str>
+<in_reply_to_user_id>1372975219</in_reply_to_user_id>
+<in_reply_to_user_id_str>1372975219</in_reply_to_user_id_str>
+<in_reply_to_screen_name>BabyAnimalPics</in_reply_to_screen_name>
+<user>
+  <id>1069804824</id>
+  <id_str>1069804824</id_str>
+  <name>Ant</name>
+  <screen_name>AnthonyMandell1</screen_name>
+  location
+  <url>http://vsco.co/antman1</url>
+  <description>Official member of the CS Flock. 1/24/16❤️</description>
+  <protected>false</protected>
+  <verified>false</verified>
+  <followers_count>505</followers_count>
+  <friends_count>431</friends_count>
+  <listed_count>0</listed_count>
+  <favourites_count>2881</favourites_count>
+  <statuses_count>1397</statuses_count>
+  <created_at>Tue Jan 08 02:54:10 +0000 2013</created_at>
+  <utc_offset>-14400</utc_offset>
+  <time_zone>Eastern Time (US & Canada)</time_zone>
+  <geo_enabled>true</geo_enabled>
+  <lang>en</lang>
+  <contributors_enabled>false</contributors_enabled>
+  <is_translator>false</is_translator>
+  <profile_background_color>C0DEED</profile_background_color>
+  <profile_background_image_url>http://abs.twimg.com/images/themes/theme1/bg.png</profile_background_image_url>
+  <profile_background_image_url_https>https://abs.twimg.com/images/themes/theme1/bg.png</profile_background_image_url_https>
+  <profile_background_tile>false</profile_background_tile>
+  <profile_link_color>0084B4</profile_link_color>
+  <profile_sidebar_border_color>C0DEED</profile_sidebar_border_color>
+  <profile_sidebar_fill_color>DDEEF6</profile_sidebar_fill_color>
+  <profile_text_color>333333</profile_text_color>
+  <profile_use_background_image>true</profile_use_background_image>
+  <profile_image_url>http://pbs.twimg.com/profile_images/724725800893833216/vWyD8G3U_normal.jpg</profile_image_url>
+  <profile_image_url_https>https://pbs.twimg.com/profile_images/724725800893833216/vWyD8G3U_normal.jpg</profile_image_url_https>
+  <profile_banner_url>https://pbs.twimg.com/profile_banners/1069804824/1459656494</profile_banner_url>
+  <default_profile>true</default_profile>
+  <default_profile_image>false</default_profile_image>
+  following
+  follow_request_sent
+  notifications
+</user>
+geo
+coordinates
+<place>
+  <id>94965b2c45386f87</id>
+  <url>https://api.twitter.com/1.1/geo/id/94965b2c45386f87.json</url>
+  <place_type>admin</place_type>
+  <name>New York</name>
+  <full_name>New York, USA</full_name>
+  <country_code>US</country_code>
+  <country>United States</country>
+  <bounding_box>
+    <type>Polygon</type>
+    <coordinates>
+      -79.76259
+      40.477383
+      -79.76259
+      45.015851
+      -71.777492
+      45.015851
+      -71.777492
+      40.477383
+    </coordinates>
+  </bounding_box>
+  <attributes>
+  </attributes>
+</place>
+contributors
+<is_quote_status>false</is_quote_status>
+<retweet_count>0</retweet_count>
+<favorite_count>0</favorite_count>
+<entities>
+  <hashtags>
+  </hashtags>
+  <urls>
+  </urls>
+  <user_mentions>
+    <screen_name>BabyAnimalPics</screen_name>
+    <name>Baby Animals</name>
+    <id>1372975219</id>
+    <id_str>1372975219</id_str>
+    <indices>
+      0
+      15
+    </indices>
+    <screen_name>SophiaFrontale</screen_name>
+    <name>soph</name>
+    <id>491880938</id>
+    <id_str>491880938</id_str>
+    <indices>
+      16
+      31
+    </indices>
+  </user_mentions>
+  <symbols>
+  </symbols>
+</entities>
+<favorited>false</favorited>
+<retweeted>false</retweeted>
+<filter_level>low</filter_level>
+<lang>und</lang>
+<timestamp_ms>1461637919234</timestamp_ms>
