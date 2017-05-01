@@ -1,0 +1,243 @@
+body {
+  background: #8B0A50;
+  font-family: "BenchNine", sans-serif;
+}
+
+/*heading CSS*/
+h1 {
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+}
+
+h2 {
+  padding: 10px 10px 5px 10px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  color: #8B0A50;
+}
+
+h3 {
+  text-align: center;
+  color: #FFF;
+  margin-top: -10px;
+}
+
+/*well CSS*/
+.well {
+  margin-top: 10px;
+}
+
+#searchBarStuff {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-inline {
+  padding-top: 10px;
+  text-align: center;
+}
+
+input[type="text"] {
+  max-width: 100px;
+}
+
+input[type="number"] {
+  max-width: 100px;
+}
+
+.form-group.col-xs-4 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.well-lg {
+  margin: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.well-sm {
+  margin: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px;
+}
+
+.well-sm a {
+  color: #F7B3DA;
+}
+
+/*small changes to bootstrap css*/
+.lead {
+  margin-bottom: -20px;
+  font-size: 20px;
+}
+
+.lead a {
+  color: #F7B3DA;
+}
+
+.text-primary {
+  color: #000;
+  font-size: 110%;
+}
+
+.text-muted {
+  font-variant: small-caps;
+  font-size: 110%;
+}
+
+.img-circle {
+  margin-right: 10px;
+}
+
+.retweet, .favorite {
+  width: 15px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+.favorite {
+  margin-left: 10px;
+}
+
+#tweetList {
+  padding-top: 10px;
+  min-height: 50px;
+}
+
+#headerT {
+  margin-top: -10px;
+  padding-top: 20px;
+}
+
+#step4 {
+  margin-top: -50px;
+}
+
+#loading {
+  margin: 0 auto;
+}
+
+#saveText {
+  padding-bottom: 15px;
+}
+
+#landing-page h1 {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+#landing-page {
+  text-align: center;
+}
+
+#landing-page button {
+  margin: 80px 20px 80px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 17px;
+  font-family: 'BenchNine', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin: 0 auto;
+}
+
+#landing-page #hide-landing-page:hover {
+  border: 2px solid #A3A3A3;
+  color: #A3A3A3;
+   -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+      -ms-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+p {
+  margin:0 auto;
+}
+
+.second {
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+select {
+  min-width: 80px;
+}
+
+#map { 
+  width: 100%;
+  margin-left: 25%;
+  height: 300px !important;
+  margin-top: -50px;
+}
+
+@media (min-width: 992px) {
+  #map { 
+    margin-left: 30%;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #politics, #device {
+    width: 40% !important;
+    height: 40% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #map { 
+    margin-left: 15%;
+  }
+  #politics, #device {
+    width: 40% !important;
+    height: 40% !important;
+  }
+}
+
+#map circle {
+  fill: #F7B3DA;
+}
+
+#map path {
+  stroke-width: 1.5; /* control the countries borders width */
+ /* stroke:#6699cc;*/ /* choose a color for the border */
+}
+
+#visualization-app {
+  padding-top: 15px;
+  text-align: center;
+}
+
+#chart1, #chart2 {
+  margin-bottom: 20px;
+}
+
+#chart1 {
+  margin-top: 10px;
+}
+
+#politics, #device {
+  width: 50% !important;
+  min-width: 350px;
+  height: 50% !important;
+  min-height: 200px;
+  }
+
+#visualHeader {
+  padding-bottom: 15px;
+}
+
+.white {
+  color: white;
+}
